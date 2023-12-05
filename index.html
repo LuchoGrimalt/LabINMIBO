@@ -12,7 +12,7 @@
     <!----- Fonts de google: Orbitron, Rajdhani y Staatliches -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Kadwa&display=swap" rel="stylesheet">
     <!----- Favicon ----->
     <link rel="shorcut icon" href="./media/logos/logo-blanco.ico">
     <!----- links de animate animated y wow -->
@@ -31,7 +31,8 @@
 <body>
     <header>
         <div class="marca">
-            <a href="./index.html"><img class="logo" src="./media/logos/INMIBO_redondo blanco.png" alt="Logo">
+            <a href="./index.html">
+                <img class="logoHead" src="./media/logos/INMIBO_redondo blanco.png" alt="Logo">
                 <h3 class="description reco1 wow animate__animated animate__fadeIn" id="top">Insituto de Micología y
                     Botánica</h3>
             </a>
@@ -42,44 +43,11 @@
         </div>
     </header>
 
-    <!-- carrusel de bootstrap-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item ">
-                <img src="./media/carrusel/recorte1.png" class="d-block w-100" alt="imagen1">
-            </div>
-            <div class="carousel-item">
-                <img src="./media/carrusel/recorte2.png" class="d-block w-100" alt="imagen2">
-            </div>
-            <div class="carousel-item active">
-                <img src="./media/carrusel/recorte3.png " class="d-block w-100" alt="imagen3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">siguiente</span>
-        </button>
-    </div>
-    
     <!-- Barra de navegacion bootstrap-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light">
         <div class="container-fluid lead">
             <a class="navbar-brand" href="./index.html">
-                <img src="./media/logos/INMIBO_redondo blanco.png" width="50px" alt="barra de navegación">
+                <img src="./media/logos/inmibo-transparente.png" width="50px" alt="barra de navegación">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -87,38 +55,38 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse  text-white " id="navbarSupportedContent">
-                <ul class="navbar-nav me-5 ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Investigación</a>
-                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">BIOINOCULANTES</a>
-                                </li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">CULTIVO DE PLANTAS Y
-                                        MICROALGAS </a></li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">ENDOFITOS FÚNGICOS
-                                    </a></li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">ETNOBIOLOGÍA
-                                    </a></li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">HONGOS AGARICALES</a>
-                                </li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> INTERACCIONES
-                                        FÚNGICAS DE TRASMISIÓN HORIZONTAL</a>
-                                </li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> MICOLOGÍA DE
-                                        ALIMENTOS</a>
-                                </li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> MICOLOGÍA
-                                        EXPERIMENTAL</a>
-                                </li>
-                                <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> SISTEMÁTICA Y
-                                        BIOLOGÍA REPRODUCTIVA DE PLANTAS VASCULARES</a>
-                                </li>
-                            </ul>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">BIOINOCULANTES</a>
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">CULTIVO DE PLANTAS Y
+                                    MICROALGAS </a></li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">ENDOFITOS FÚNGICOS
+                                </a></li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">ETNOBIOLOGÍA
+                                </a></li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">HONGOS AGARICALES</a>
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> INTERACCIONES
+                                    FÚNGICAS DE TRASMISIÓN HORIZONTAL</a>
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> MICOLOGÍA DE
+                                    ALIMENTOS</a>
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> MICOLOGÍA
+                                    EXPERIMENTAL</a>
+                            </li>
+                            <li><a class="dropdown-item text-primary" href="./pages/micoteca.html"> SISTEMÁTICA Y
+                                    BIOLOGÍA REPRODUCTIVA DE PLANTAS VASCULARES</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="true">Micoteca (BAFC-H)</a>
+                            data-bs-toggle="dropdown" aria-expanded="true">Micoteca</a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">BIOINOCULANTES</a>
                             </li>
@@ -177,18 +145,44 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-1" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-secondary btn-sm" type="submit"><img src="media/lupa.png"
-                            alt="lupa"></button>
-                </form>
+            </div>
+    </nav>
+    <!-- carrusel de bootstrap-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item ">
+                <img src="./media/carrusel/recorte1.png" class="d-block w-100" alt="imagen1">
+            </div>
+            <div class="carousel-item">
+                <img src="./media/carrusel/recorte2.png" class="d-block w-100" alt="imagen2">
+            </div>
+            <div class="carousel-item active">
+                <img src="./media/carrusel/recorte3.png " class="d-block w-100" alt="imagen3">
             </div>
         </div>
-    </nav>
-
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">siguiente</span>
+        </button>
+    </div>
+    <!-- LINEAS DE INVESTIGACION -->
     <main>
         <section class="investigacion">
-            <h2>LINEAS DE INVESTIGACION</h2>
+            <h2>Lineas de Investigación</h2>
             <div class="lineasInv">
                 <div class="imgLineaInv">
                     <img src="./media/galeria/DSC_6686.jpg" alt="Imagen de Bioinoculantes">
@@ -340,11 +334,12 @@
                             <li>E-mail grupo: etnobiologia.fceyn.uba@gmail.com </li>
                             <li>Facebook del Grupo: @etnobiologiafceynuba</li>
                             <li>Web del grupo en DBBE:
-                                <a href="https://dbbe.fcen.uba.ar/investigacion/grupos-de-investigacion/grupo-de-etnobiologia/"></a>
+                                <a
+                                    href="https://dbbe.fcen.uba.ar/investigacion/grupos-de-investigacion/grupo-de-etnobiologia/"></a>
                             </li>
                             <li>
-                                <a href="https://dbbe.fcen.uba.ar/docencia/posgrado/etnobiologia/"
-                                 target="_blank">Curso de Posgrado: ETNOBIOLOGÍA</a>
+                                <a href="https://dbbe.fcen.uba.ar/docencia/posgrado/etnobiologia/" target="_blank">Curso
+                                    de Posgrado: ETNOBIOLOGÍA</a>
                             </li>
                         </ul>
                     </div>
