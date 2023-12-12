@@ -9,38 +9,26 @@ body {
 }
 
 header {
+  position: fixed;
   width: 100%;
-  height: 700px;
+  height: auto;
   background-size: cover;
   position: relative;
   padding: auto;
 }
-
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.barraSup {
+header .barraSup {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  background: rgba(18, 17, 17, 0.621);
+  background: rgba(18, 17, 17, 0.499);
   justify-content: space-around;
   align-items: center;
   padding: 10px;
 }
-
-.marca {
+header .barraSup .marca {
   justify-content: center;
 }
-
-.marca a {
+header .barraSup .marca a {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -50,19 +38,17 @@ video {
   justify-content: center;
   margin: 0px 25px;
 }
-
-.logoHead {
+header .barraSup .marca a .logoHead {
   width: 100px;
 }
-
-.description {
+header .barraSup .marca a .description {
   color: whitesmoke;
   width: 150px;
   font-family: "Hind", sans-serif;
   font-size: 1.2rem;
   margin: 0;
 }
-.siglas {
+header .barraSup .siglas {
   color: whitesmoke;
   font-family: "Times New Roman", Times, serif;
   font-size: 3.5rem;
@@ -70,83 +56,148 @@ video {
   text-align: justify;
   letter-spacing: 20px;
 }
-
-.logoConi {
+header .barraSup .logoConi {
   width: 230px;
   margin: 5px;
   border-radius: 2%;
 }
 
-.d-flex img {
-  width: 40px;
-  margin: 10px;
-  &:hover {
-    filter: drop-shadow(0 0 2px rgb(54, 167, 253));
-  }
-}
-
 .navbar {
-  background: rgba(18, 17, 17, 0.621);
+  background: rgba(18, 17, 17, 0.499);
   margin: 0;
   position: sticky top;
 }
-.navbar-collapse {
+.navbar .navbar-collapse {
   font-size: 1.2rem;
 }
-.nav-link {
+.navbar .navbar-collapse .nav-link {
   margin: 0px 20px;
   transition: 1s;
 }
-.nav-link:hover {
+.navbar .navbar-collapse .nav-link:hover {
   transform: scale(1.1);
   text-shadow: 0.2px yellow;
 }
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 900px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  margin-bottom: 3px;
+}
+
 .historia {
-  padding: 10px 80px;
+  padding: 40px 60px;
+  color: rgb(128, 154, 178);
+  height: 700px;
 }
-
-.intro {
-  text-align: center;
-}
-
-.subtitulo {
+.historia .subtitulo {
   text-align: center;
   font-size: 3rem;
-  margin: 20px 0px;
+}
+.historia .intro {
+  text-align: center;
 }
 
 .investigacion {
   background-color: rgb(29, 26, 26);
-  padding-bottom: 20px;
+  padding: 60px 10px;
 }
-
 .investigacion h2 {
   color: aliceblue;
   padding: 20px;
 }
-
-.lineasInv {
+.investigacion .lineasInv {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   padding: 2px;
 }
-.imgLineaInv img {
-  width: 550px;
-  opacity: 0.9;
-  background-size: cover;
+.investigacion .lineasInv a {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  text-decoration: none;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  margin: 0px 25px;
+}
+.investigacion .lineasInv a .logoHead {
+  width: 80px;
+}
+.investigacion .lineasInv a .description {
+  color: whitesmoke;
+  width: 230px;
+  font-family: "Hind", sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
 }
 
-.lineaInv {
-  width: 600px;
-  height: 350px;
-  padding: 20px;
-  overflow: auto;
-  background-color: white;
-  margin-bottom: 30px;
+.equipo {
+  padding: 60px 0px;
 }
-.imglineaInv img:hover {
-  opacity: 1;
+.equipo .Integrantes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.equipo .Integrantes .cardIndividual {
+  flex-direction: column;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  transition: 1.2s;
+}
+.equipo .Integrantes .cardIndividual .fotoIntegrante {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid rgb(215, 224, 228) 7px;
+  align-self: center;
+}
+.equipo .Integrantes .cardIndividual:hover {
+  transform: scale(1.1);
+}
+.equipo .grupo img {
+  width: 100%;
+}
+
+.ubicacion {
+  background-image: url(../media/redes/mapamundi.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 60px 0px;
+}
+.ubicacion .ubicacion h2 {
+  margin: 10px;
+  color: aliceblue;
+}
+.ubicacion .lugarContacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.ubicacion .lugarContacto .contacto {
+  width: 500px;
+  height: auto;
+  align-self: center;
+  color: aliceblue;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.543);
+  border-radius: 3%;
+}
+.ubicacion .lugarContacto .mapa iframe {
+  width: 500px;
+  height: 500px;
 }
 
 footer {
@@ -159,79 +210,7 @@ footer {
   align-items: center;
 }
 footer .logo {
-  width: 250px;
-}
-
-.autoridades {
-  background-color: rgb(249, 255, 250);
-  padding: 10px;
-}
-
-.Integrantes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-.cardIndividual {
-  flex-direction: column;
-  width: 250px;
-  margin: 20px;
-  text-align: center;
-  transition: 1.2s;
-}
-
-.cardIndividual:hover {
-  transform: scale(1.2);
-}
-
-.fotoIntegrante {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  border-radius: 50%;
-  border: solid rgb(215, 224, 228) 7px;
-  align-self: center;
-}
-
-.grupo img {
-  padding: 30px 20px;
-  width: 100%;
-}
-
-.ubicacion {
-  background-image: url(../media/redes/mapamundi.jpg);
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  padding: 30px 0px;
-}
-
-.ubicacion h2 {
-  margin: 10px;
-  color: aliceblue;
-}
-
-.lugarContacto{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-
-.contacto{
-  width: 500px;
-  height: auto;
-  align-self: center;
-  color: aliceblue;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.543);
-  border-radius: 3%;
-
-}
-.mapa iframe{
-  width: 500px;
-  height: 500px;
+  width: 150px;
 }
 
 @media only screen and (max-width: 720px) {
@@ -245,7 +224,7 @@ footer .logo {
   .lineasInv img {
     width: 80%;
   }
-  .logoConi{
+  .logoConi {
     display: none;
   }
 }

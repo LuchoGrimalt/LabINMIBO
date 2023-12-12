@@ -1,2 +1,4 @@
 .env
-no_modules
+node_modules
+*.txt
+package-lock.json
