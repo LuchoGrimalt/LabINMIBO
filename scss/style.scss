@@ -84,22 +84,29 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 900px;
+  height: 872 px;
   object-fit: cover;
   z-index: -1;
   margin-bottom: 3px;
 }
 
 .historia {
-  padding: 40px 60px;
-  color: rgb(128, 154, 178);
-  height: 700px;
-  .subtitulo {
-    text-align: center;
-    font-size: 3rem;
-  }
+  width: auto;  
+  margin: 140px;
   .intro {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    h4 {
+      color: rgb(47, 46, 46);
+      text-align: justify;
+      width: auto;
+    }
+    .logoConiUba {
+      width: 80%;
+    }
   }
 }
 
@@ -116,24 +123,24 @@ video {
     justify-content: center;
     padding: 2px;
     a {
-        display: flex;
-        flex-direction: row;
-        align-content: flex-start;
-        text-decoration: none;
-        align-items: center;
-        padding: 5px;
-        justify-content: center;
-        margin: 0px 25px;
-        .logoHead {
-          width: 80px;
-        }
-        .description {
-          color: whitesmoke;
-          width: 230px;
-          font-family: "Hind", sans-serif;
-          font-size: 1.2rem;
-          margin: 0;
-        }
+      display: flex;
+      flex-direction: row;
+      align-content: flex-start;
+      text-decoration: none;
+      align-items: center;
+      padding: 5px;
+      justify-content: center;
+      margin: 0px 25px;
+      .logoHead {
+        width: 80px;
+      }
+      .description {
+        color: whitesmoke;
+        width: 230px;
+        font-family: "Hind", sans-serif;
+        font-size: 1.2rem;
+        margin: 0;
+      }
     }
   }
 }
@@ -226,4 +233,6 @@ footer {
   .logoConi {
     display: none;
   }
+  .historia {
+    display: none;
 }
