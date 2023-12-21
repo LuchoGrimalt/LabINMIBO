@@ -1,19 +1,76 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Hind", sans-serif;
-}
-
-header {
-  position: fixed;
+.ubicacion {
+  background-image: url(../media/redes/mapamundi.jpg);
+  background-position: bottom;
   width: 100%;
   height: auto;
   background-size: cover;
+  padding: 60px 0px;
+}
+.ubicacion h2 {
+  margin: 10px;
+  padding-left: 30px;
+  color: whitesmoke;
+}
+.ubicacion .lugarContacto {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+}
+.ubicacion .lugarContacto .contacto {
+  width: 500px;
+  height: auto;
+  color: aliceblue;
+  font-size: 1.2rem;
+  background-color: rgba(18, 17, 17, 0.499);
+  border-radius: 3%;
+  margin: 10px;
+}
+.ubicacion .lugarContacto .mapa iframe {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background: black;
+  align-items: center;
+  padding: 30px 5px;
+}
+footer .footer_dire {
+  width: 450px;
+  color: whitesmoke;
+}
+footer .footer_dire li p a {
+  text-decoration: none;
+}
+footer .footer_logo a img {
+  width: 400px;
+}
+footer .footer_redes {
+  display: inline-flex;
+  width: 400px;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+footer .footer_redes img {
+  width: 32px;
+  flex-direction: row;
+  margin: 0px 10px;
+}
+footer .footer_redes img:hover {
+  filter: drop-shadow(0 0 2px rgb(55, 139, 114));
+}
+
+header {
   position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
   padding: auto;
 }
 header .barraSup {
@@ -50,10 +107,9 @@ header .barraSup .marca a .description {
 }
 header .barraSup .siglas {
   color: whitesmoke;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 3.5rem;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 5rem;
   margin: 2px;
-  text-align: justify;
   letter-spacing: 20px;
 }
 header .barraSup .logoConi {
@@ -62,62 +118,55 @@ header .barraSup .logoConi {
   border-radius: 2%;
 }
 
-.navbar {
-  background: rgba(18, 17, 17, 0.499);
-  margin: 0;
-  position: sticky top;
+.equipo {
+  background: rgb(238, 236, 236);
+  padding: 60px 0px;
 }
-.navbar .navbar-collapse {
-  font-size: 1.2rem;
+.equipo h4 {
+  color: grey;
+  padding-left: 30px;
 }
-.navbar .navbar-collapse .nav-link {
-  margin: 0px 20px;
-  transition: 1s;
+.equipo h2 {
+  padding-left: 50px;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
 }
-.navbar .navbar-collapse .nav-link:hover {
-  transform: scale(1.1);
-  text-shadow: 0.2px yellow;
-}
-
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 872 px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: -1;
-  margin-bottom: 3px;
-}
-
-.historia {
-  width: auto;
-  margin: 140px;
-}
-.historia .intro {
+.equipo .Integrantes {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.equipo .Integrantes .cardIndividual {
   flex-direction: column;
-  width: 60%;
-  margin: auto;
-  align-items: center;
+  width: 250px;
+  margin: 30px;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
 }
-.historia .intro h4 {
-  color: rgb(47, 46, 46);
-  text-align: justify;
-  width: auto;
+.equipo .Integrantes .cardIndividual .fotoIntegrante {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid rgb(215, 224, 228) 7px;
+  align-self: center;
+  transition: 1.2s;
 }
-.historia .intro .logoConiUba {
-  width: 80%;
+.equipo .Integrantes .cardIndividual .fotoIntegrante:hover {
+  transform: scale(1.1);
+}
+.equipo .grupo img {
+  width: 100%;
 }
 
 .investigacion {
   background-color: rgb(29, 26, 26);
-  padding: 60px 10px;
+  padding: 40px 10px;
 }
 .investigacion h2 {
-  color: aliceblue;
-  padding: 20px;
+  color: whitesmoke;
+  padding: 30px;
 }
 .investigacion .lineasInv {
   display: flex;
@@ -146,84 +195,66 @@ video {
   margin: 0;
 }
 
-.equipo {
-  padding: 60px 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.equipo .Integrantes {
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.historia {
+  width: auto;
+  margin: 140px;
+}
+.historia .intro {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.equipo .Integrantes .cardIndividual {
   flex-direction: column;
-  width: 250px;
-  margin: 20px;
-  text-align: center;
-  transition: 1.2s;
-}
-.equipo .Integrantes .cardIndividual .fotoIntegrante {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  border-radius: 50%;
-  border: solid rgb(215, 224, 228) 7px;
-  align-self: center;
-}
-.equipo .Integrantes .cardIndividual:hover {
-  transform: scale(1.1);
-}
-.equipo .grupo img {
-  width: 100%;
-}
-
-.ubicacion {
-  background-image: url(../media/redes/mapamundi.jpg);
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  padding: 60px 0px;
-}
-.ubicacion .ubicacion h2 {
-  margin: 10px;
-  color: aliceblue;
-}
-.ubicacion .lugarContacto {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  padding: 10px;
-}
-.ubicacion .lugarContacto .contacto {
-  width: 500px;
-  height: auto;
-  align-self: center;
-  color: aliceblue;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.543);
-  border-radius: 3%;
-}
-.ubicacion .lugarContacto .mapa iframe {
-  width: 500px;
-  height: 500px;
-}
-
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  background: rgb(21, 19, 19);
-  color: whitesmoke;
-  padding: 30px;
+  width: 60%;
+  margin: auto;
   align-items: center;
 }
-footer .logo {
-  width: 150px;
+.historia .intro h4 {
+  color: rgb(41, 39, 39);
+  text-align: center;
+}
+.historia .intro .logoConiUba {
+  width: 80%;
+}
+.historia .intro h1 {
+  font-family: "Fira Sans", sans-serif;
+  color: rgb(233, 228, 228);
+  font-size: 4rem;
+}
+
+.navbar {
+  background: rgba(18, 17, 17, 0.499);
+  margin: 0;
+  position: sticky top;
+}
+.navbar .navbar-collapse {
+  font-size: 1.2rem;
+}
+.navbar .navbar-collapse .nav-link {
+  margin: 0px 15px;
+  transition: 1s;
+}
+.navbar .navbar-collapse .nav-link:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 720px) {
   header {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
   .siglas {
     font-size: 2rem;
@@ -234,7 +265,10 @@ footer .logo {
   .logoConi {
     display: none;
   }
-  .intro {
-    width: auto;
+  .historia {
+    display: none;
+  }
+  video {
+    width: 100%;
   }
 }

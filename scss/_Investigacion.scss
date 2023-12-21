@@ -1,0 +1,35 @@
+
+.investigacion {
+    background-color: $bg_oscuro;
+    padding: 40px 10px;
+    h2 {
+      color: whitesmoke;
+      padding: 30px;
+    }
+    .lineasInv {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      padding: 2px;
+      a {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        text-decoration: none;
+        align-items: center;
+        padding: 5px;
+        justify-content: center;
+        margin: 0px 25px;
+        .logoHead {
+          width: 80px;
+        }
+        .description {
+          color: whitesmoke;
+          width: 230px;
+          font-family: "Hind", sans-serif;
+          font-size: 1.2rem;
+          margin: 0;
+        }
+      }
+    }
+  }

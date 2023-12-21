@@ -1,0 +1,53 @@
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: auto;
+    .barraSup {
+      display: flex;
+      flex-flow: row wrap;
+      width: 100%;
+      background: $bg_transparente;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px;
+      .marca {
+        justify-content: center;
+        a {
+          display: flex;
+          flex-direction: row;
+          align-content: flex-start;
+          text-decoration: none;
+          align-items: center;
+          padding: 5px;
+          justify-content: center;
+          margin: 0px 25px;
+          .logoHead {
+            width: 100px;
+          }
+          .description {
+            color: whitesmoke;
+            width: 150px;
+            font-family: "Hind", sans-serif;
+            font-size: 1.2rem;
+            margin: 0;
+          }
+        }
+      }
+      .siglas {
+        color: whitesmoke;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 5rem;
+        margin: 2px;
+        letter-spacing: 20px;
+      }
+      .logoConi {
+        width: 230px;
+        margin: 5px;
+        border-radius: 2%;
+      }
+    }
+  }
+  

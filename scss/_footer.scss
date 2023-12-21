@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background: black;
+  align-items: center;
+  padding: 30px 5px;
+  .footer_dire {
+    width: 450px;
+    color: whitesmoke;
+    li p a {
+      text-decoration: none;
+    }
+  }
+  .footer_logo a img {
+    width: 400px;
+  }
+  .footer_redes {
+    display: inline-flex;
+    width: 400px;
+    justify-content: space-evenly;
+    margin: 10px;
+    img {
+      width: 32px;
+      flex-direction: row;
+      margin: 0px 10px;
+      &:hover {
+        filter: drop-shadow(0 0 2px rgb(55, 139, 114));
+      }
+    }
+  }
+}

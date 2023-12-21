@@ -1,0 +1,42 @@
+.equipo {
+  background: $bg_claro;
+  padding: 60px 0px;
+  h4 {
+    color: grey;
+    padding-left: 30px;
+  }
+  h2 {
+    padding-left: 50px;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+  }
+  .Integrantes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .cardIndividual {
+      flex-direction: column;
+      width: 250px;
+      margin: 30px;
+      color: black;
+      font-family: "Fira Sans", sans-serif;
+      text-align: center;
+      .fotoIntegrante {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        border-radius: 50%;
+        border: solid rgb(215, 224, 228) 7px;
+        align-self: center;
+        transition: 1.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  .grupo img {
+    width: 100%;
+
+  }
+}
