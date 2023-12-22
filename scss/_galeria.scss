@@ -1,0 +1,30 @@
+.portfolio {
+  background: $bg_claro;
+  h2{
+      padding: 40px;
+      color: rgb(39, 38, 38);
+      text-align: center;
+  }
+  .galeria {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    div {
+      width: 450px;
+      height: 460px;
+      margin: 20px;
+      color: rgb(10, 9, 9);
+      background-color: white;
+      border: solid rgb(190, 187, 187) 1px;
+      flex-direction: column;
+      display: flex;
+      text-align: center;
+      transition: all 1s;
+      &:hover {
+        transform: scale(1.2, 1.2);
+        box-shadow: 2px 2px 5px #999;
+        -moz-box-shadow: 2px 2px 5px #999;
+      }
+    }
+  }
+}
