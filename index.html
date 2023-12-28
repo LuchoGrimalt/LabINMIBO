@@ -30,21 +30,7 @@
 </head>
 
 <body>
-    <header>
-        <div class="barraSup">
-            <div class="marca">
-                <a href="./index.html">
-                    <img class="logoHead" src="../media/logos/INMIBO_redondo blanco.png" alt="Logo">
-                    <h3 class="description" id="top">Insituto de Micología y
-                        Botánica</h3>
-                </a>
-            </div>
-            <h1 class="siglas wow animate__animated animate__fadeInUp">INMIBO</h1>
-            <div>
-                <img class="logoConi" src="./media/logos/inmibo-uba-conicet-fondo-blanco.jpg" alt="logo CONICET">
-            </div>
-        </div>
-    </header>
+    
 
     <!-- Barra de navegacion bootstrap-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
@@ -52,19 +38,20 @@
             <a class="navbar-brand" href="./index.html">
                 <img src="./media/logos/inmibo-transparente.png" width="50px" alt="barra de navegación">
             </a>
+            <h2 class="siglas text-white">INMIBO</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse  text-white " id="navbarSupportedContent">
+            <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
                 <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">Lineas de Investigación</a>
                         <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item text-primary"
-                                    href="./pages/investigacion.html">BIOINOCULANTES</a>
+                                    href="./pages/lineas/bioinoculantes.html">BIOINOCULANTES</a>
                             </li>
                             <li><a class="dropdown-item text-primary" href="./pages/micoteca.html">CULTIVO DE
                                     PLANTAS Y
@@ -186,11 +173,26 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/galeria.html">Galería2</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">contacto</a></li>
+                    <li class="nav-item text-white"><a class="nav-link" href="./pages/galeria.html">Galería</a></li>
+                    <li class="nav-item text-white"><a class="nav-link" href="#contacto">contacto</a></li>
                 </ul>
             </div>
     </nav>
+    <header>
+        <div class="barraSup">
+            <div class="marca">
+                <a href="./index.html">
+                    <img class="logoHead" src="../media/logos/INMIBO_redondo blanco.png" alt="Logo">
+                    <h3 class="description" id="top">Insituto de Micología y
+                        Botánica</h3>
+                </a>
+            </div>
+            <h1 class="siglas wow animate__animated animate__fadeInUp">INMIBO</h1>
+            <div>
+                <img class="logoConi" src="./media/logos/inmibo-uba-conicet-fondo-blanco.jpg" alt="logo CONICET">
+            </div>
+        </div>
+    </header>
     <main>
         <video muted autoplay loop>
             <source src="./media/video/videongo.mp4" type="video/mp4">
@@ -198,14 +200,15 @@
         <!-- Historia -->
         <section class="historia">
             <div class="intro">
-                <h4 class="fraseIntro wow animate__animated animate__fadeIn">Con una trayectoria de casi 30 años, el
-                    InMiBo es una unidad ejecutora del CONICET de doble
-                    pertenencia</h4>
+                <h3 class="fraseIntro wow animate__animated animate__fadeInUp">Con una trayectoria de casi 30 años, el
+                    <b>INMIBO</b> es una unidad ejecutora del CONICET de doble
+                    pertenencia</h3>
                 <img class="logoConiUba wow animate__animated animate__zoomIn"
                     src="./media/logos/UBA-conicet-fondo TRANSPARENTE.png" alt="logo uba conicet">
                 <hr>
-                <h1>InMiBo</h1>
             </div>
+            <img src="media/logos/exactasUBA.png" alt="logo exactas-UBA"> 
+            <h2>InMiBo</h2>
         </section>
 
         <!-- Lineas de investigacion -->
@@ -296,21 +299,21 @@
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="./media/integrantes/lechner_autoridades.jpg" alt="Foto director">
                     </img>
-                    <h3>Dr. Bernardo E. Lechner</h3>
+                    <h5>Dr. Bernardo E. Lechner</h5>
                     <p>DIRECTOR</p>
                     <a class="e-mail" href=mailto:bernardoelechner@gmail.com>📨 bernardoelechner@gmail.com</a>
                 </card>
                 <div class="cardIndividual">
                     <img class="fotoIntegrante" src="./media/integrantes/novas_autoridades.jpg" alt="Foto subdirectora">
                     </img>
-                    <h3>Dra. María Victoria Novas</h3>
+                    <h5>Dra. María Victoria Novas</h5>
                     <p>VICEDIRECTORA</p>
                     <a class="e-mail" href=mailto:mvnovas@gmail.com>📨 mvnovas@gmail.com</a>
                 </div>
                 <div class="cardIndividual">
                     <img class="fotoIntegrante" src="./media/integrantes/novas_autoridades.jpg" alt="Foto subdirectora">
                     </img>
-                    <h3>Silvia Inés Castellani</h3>
+                    <h5>Silvia Inés Castellani</h5>
                     <p>Secretaria (SINEP)</p>
                     <p>Teléfono: 4787-2706</p>
                     <a class="e-mail" href=mailto:secretaria.inmibo@gmail.com>📨 secretaria.inmibo@gmail.com</a>

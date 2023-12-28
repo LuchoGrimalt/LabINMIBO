@@ -1,0 +1,16 @@
+.zooInfinito{
+    width: 100svh;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: lime;
+    scale: 0 1;
+    transform-origin: left;
+
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+    to {scale: 1 1;}
+}
