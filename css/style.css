@@ -23,7 +23,7 @@
   height: auto;
   color: aliceblue;
   font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.78);
+  background: rgba(17, 16, 16, 0.847);
   border-radius: 3%;
   margin: 10px;
 }
@@ -42,27 +42,26 @@ footer {
   padding: 30px 5px;
 }
 footer .footer_dire {
-  width: 450px;
+  width: 500px;
   color: whitesmoke;
 }
 footer .footer_dire li p a {
   text-decoration: none;
 }
 footer .footer_logo a img {
-  width: 400px;
+  width: 500px;
 }
 footer .footer_redes {
   display: inline-flex;
-  width: 400px;
+  width: 500px;
   justify-content: space-evenly;
-  margin: 10px;
 }
 footer .footer_redes img {
-  width: 32px;
+  width: 64px;
   flex-direction: row;
-  margin: 0px 10px;
-}
-footer .footer_redes img:hover {
+  padding: 10px;
+  background-color: rgb(40, 125, 46);
+  border-radius: 5%;
   filter: drop-shadow(0 0 2px rgb(55, 139, 114));
 }
 
@@ -72,12 +71,12 @@ header {
   height: auto;
   background-size: cover;
   padding: auto;
+  background: rgba(17, 16, 16, 0.847);
 }
 header .barraSup {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  background: rgba(0, 0, 0, 0.78);
   justify-content: space-around;
   align-items: center;
   padding: 10px;
@@ -121,14 +120,14 @@ header .barraSup .logoConi {
 
 .equipo {
   background: rgb(238, 236, 236);
-  padding: 60px 0px;
+  padding: 60px 2px;
 }
 .equipo h4 {
   color: grey;
   padding-left: 30px;
 }
 .equipo h2 {
-  padding-left: 50px;
+  text-align: center;
   color: black;
   font-family: "Fira Sans", sans-serif;
 }
@@ -145,6 +144,14 @@ header .barraSup .logoConi {
   font-family: "Fira Sans", sans-serif;
   text-align: center;
 }
+.equipo .Integrantes .cardIndividual h5 {
+  margin: 10px 2px;
+  color: rgb(85, 81, 81);
+  font-family: "Fira Sans", sans-serif;
+}
+.equipo .Integrantes .cardIndividual p {
+  text-decoration: dotted;
+}
 .equipo .Integrantes .cardIndividual .fotoIntegrante {
   width: 200px;
   height: 200px;
@@ -152,18 +159,24 @@ header .barraSup .logoConi {
   border-radius: 50%;
   border: solid rgb(215, 224, 228) 7px;
   align-self: center;
+  margin: 20px 2px;
   transition: 1.2s;
 }
 .equipo .Integrantes .cardIndividual .fotoIntegrante:hover {
   transform: scale(1.1);
 }
+.equipo .Integrantes .cardIndividual .e-mail img {
+  width: 40px;
+  margin: 10px;
+}
 .equipo .grupo img {
   width: 100%;
+  margin: 50px 2px;
 }
 
 .investigacion {
   background-color: rgb(20, 18, 18);
-  padding: 40px 10px;
+  padding: 60px 2px;
 }
 .investigacion h2 {
   color: whitesmoke;
@@ -183,7 +196,7 @@ header .barraSup .logoConi {
   align-items: center;
   padding: 5px;
   justify-content: center;
-  margin: 0px 25px;
+  margin: 25px;
 }
 .investigacion .lineasInv a .logoHead {
   width: 80px;
@@ -193,11 +206,12 @@ header .barraSup .logoConi {
   width: 230px;
   font-family: "Hind", sans-serif;
   font-size: 1.2rem;
-  margin: 0;
+  margin: 10px;
 }
 
 .portfolio {
   background: rgb(20, 18, 18);
+  padding: 60px 2px;
 }
 .portfolio h2 {
   color: whitesmoke;
@@ -300,7 +314,7 @@ video {
 }
 
 .navbar {
-  background: rgba(0, 0, 0, 0.943);
+  background: rgba(17, 16, 16, 0.847);
   margin: 0;
   position: sticky top;
 }
@@ -314,11 +328,29 @@ video {
 .navbar .navbar-collapse .nav-link:hover {
   transform: scale(1.1);
 }
+.navbar .navbar-collapse .nav-link:active {
+  color: orange;
+}
+.navbar .navbar-collapse ul .dropdown-menu.show {
+  background: none;
+  border: none;
+}
+.navbar .navbar-collapse ul .dropdown-menu.show li {
+  margin: 3px;
+  background-color: rgb(26, 26, 26);
+  font-size: 1.2rem;
+}
+.navbar .navbar-collapse ul .dropdown-menu.show li a {
+  padding: 10px;
+}
+.navbar .navbar-collapse ul .dropdown-menu.show li a:hover {
+  background-color: rgb(40, 125, 46);
+  color: whitesmoke;
+}
 
 @media only screen and (max-width: 720px) {
   header {
     flex-direction: column;
-    align-items: center;
   }
   .siglas {
     font-size: 2rem;

@@ -5,11 +5,11 @@ header {
     height: auto;
     background-size: cover;
     padding: auto;
+    background: $bg_transparente;
     .barraSup {
       display: flex;
       flex-flow: row wrap;
       width: 100%;
-      background: $bg_transparente;
       justify-content: space-around;
       align-items: center;
       padding: 10px;

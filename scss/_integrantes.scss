@@ -1,12 +1,12 @@
 .equipo {
   background: $bg_claro;
-  padding: 60px 0px;
+  padding: 60px 2px;
   h4 {
     color: grey;
     padding-left: 30px;
   }
   h2 {
-    padding-left: 50px;
+    text-align: center;
     color: black;
     font-family: "Fira Sans", sans-serif;
   }
@@ -21,6 +21,15 @@
       color: black;
       font-family: "Fira Sans", sans-serif;
       text-align: center;
+      h5{
+        margin: 10px 2px;
+        color: rgb(85, 81, 81) ;
+        font-family: "Fira Sans", sans-serif;
+
+      }
+      p{
+        text-decoration: dotted;
+      }
       .fotoIntegrante {
         width: 200px;
         height: 200px;
@@ -28,15 +37,21 @@
         border-radius: 50%;
         border: solid rgb(215, 224, 228) 7px;
         align-self: center;
+        margin: 20px 2px;
         transition: 1.2s;
         &:hover {
           transform: scale(1.1);
         }
       }
+      .e-mail img{
+        width: 40px;
+        margin: 10px;
+      }
     }
   }
   .grupo img {
     width: 100%;
+    margin: 50px 2px;
 
   }
 }

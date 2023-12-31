@@ -1,36 +1,34 @@
 .ubicacion {
-    background-image: url(../media/mapamundi.png);
-    background-position: bottom;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    padding: 60px 0px;
-    h2 {
+  background-image: url(../media/mapamundi.png);
+  background-position: bottom;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 60px 0px;
+  h2 {
+    margin: 10px;
+    padding-left: 30px;
+    color: whitesmoke;
+  }
+  .lugarContacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px;
+    .contacto {
+      width: 500px;
+      height: auto;
+      color: aliceblue;
+      font-size: 1.2rem;
+      background: $bg_transparente;
+      border-radius: 3%;
       margin: 10px;
-      padding-left: 30px;
-      color: whitesmoke;
     }
-    .lugarContacto {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-evenly;
-      padding: 10px;
+    .mapa iframe {
+      width: 400px;
+      height: 300px;
       margin: 10px;
-      .contacto {
-        width: 500px;
-        height: auto;
-        color: aliceblue;
-        font-size: 1.2rem;
-        background-color: $bg_transparente;
-        border-radius: 3%;
-      margin: 10px;
-
-      }
-      .mapa iframe {
-        width: 400px;
-        height: 300px;
-      margin: 10px;
-
-      }
     }
   }
+}

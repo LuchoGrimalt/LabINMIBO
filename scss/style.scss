@@ -13,7 +13,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: $bg_oscuro;
 }
 video {
@@ -45,8 +45,8 @@ video {
     .logoConiUba {
       width: 80%;
     }
-    h2{
-      font-family: 'Fira Sans', sans-serif;
+    h2 {
+      font-family: "Fira Sans", sans-serif;
       color: rgb(233, 228, 228);
       font-size: 4rem;
     }
@@ -54,7 +54,7 @@ video {
 }
 
 .navbar {
-  background:rgba(0, 0, 0, 0.943);
+  background: $bg_transparente;
   margin: 0;
   position: sticky top;
   .navbar-collapse {
@@ -65,6 +65,25 @@ video {
       &:hover {
         transform: scale(1.1);
       }
+      &:active {
+        color: orange;
+      }
+    }
+    ul .dropdown-menu.show {
+      background: none;
+      border: none;
+      li {
+        margin: 3px;
+        background-color: rgb(26, 26, 26);
+        font-size: 1.2rem;
+        a {
+          padding: 10px;
+          &:hover {
+            background-color: rgb(40, 125, 46);
+            color: whitesmoke;
+          }
+        }
+      }
     }
   }
 }
@@ -72,7 +91,6 @@ video {
 @media only screen and (max-width: 720px) {
   header {
     flex-direction: column;
-    align-items: center;
   }
   .siglas {
     font-size: 2rem;
@@ -86,7 +104,7 @@ video {
   .historia {
     display: none;
   }
-  video{
+  video {
     width: 100%;
   }
 }
