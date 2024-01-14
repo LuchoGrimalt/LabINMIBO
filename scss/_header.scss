@@ -1,54 +1,93 @@
-
 header {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    padding: auto;
-    background: $bg_transparente;
-    .barraSup {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 2px;
+  background: $bg_transparente;
+}
+.barraSup {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px;
+  z-index: 1;
+  .marca {
+    justify-content: center;
+    a {
       display: flex;
-      flex-flow: row wrap;
-      width: 100%;
-      justify-content: space-around;
+      flex-direction: row;
+      align-content: flex-start;
+      text-decoration: none;
       align-items: center;
-      padding: 10px;
-      z-index: 1;
-      .marca {
-        justify-content: center;
-        a {
-          display: flex;
-          flex-direction: row;
-          align-content: flex-start;
-          text-decoration: none;
-          align-items: center;
-          padding: 5px;
-          justify-content: center;
-          margin: 0px 25px;
-          .logoHead {
-            width: 100px;
-          }
-          .description {
-            color: whitesmoke;
-            width: 150px;
-            font-family: "Hind", sans-serif;
-            font-size: 1.2rem;
-            margin: 0;
-          }
-        }
+      padding: 5px;
+      justify-content: center;
+      margin: 0px 25px;
+      .logoHead {
+        width: 100px;
       }
-      .siglas {
+      .description {
         color: whitesmoke;
-        font-family: 'Fira Sans', sans-serif;
-        font-size: 5rem;
-        margin: 2px;
-        letter-spacing: 20px;
-      }
-      .logoConi {
-        width: 230px;
-        margin: 5px;
-        border-radius: 2%;
+        width: 150px;
+        font-family: "Hind", sans-serif;
+        font-size: 1.2rem;
+        margin: 0;
       }
     }
   }
-  
+  .siglas {
+    color: whitesmoke;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 4rem;
+    margin: 2px;
+    letter-spacing: 20px;
+  }
+  .logoConi {
+    width: 230px;
+    margin: 5px;
+    border-radius: 2%;
+  }
+}
+.bgHeader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.historia {
+  width: auto;
+  margin: 80px;
+  .intro {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    h3 {
+      color: rgb(41, 39, 39);
+      width: 80% 2px 2px 2px;
+      padding: 2px 50px;
+      text-shadow: 2px;
+      text-align: center;
+      font-family: "Hind", sans-serif;
+    }
+    .logoConiUba {
+      width: 80%;
+    }
+    h2 {
+      font-family: "Fira Sans", sans-serif;
+      color: rgb(233, 228, 228);
+      font-size: 4rem;
+    }
+  }
+  p{
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.822);
+  }
+}

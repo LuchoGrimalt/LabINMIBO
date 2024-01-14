@@ -13,17 +13,16 @@ footer {
     }
   }
   .footer_logo a img {
-    width: 500px;
+    width: 400px;
   }
   .footer_redes {
     display: inline-flex;
-    width: 500px;
+    width: 300px;
     justify-content: space-evenly;
     img {
       width: 64px;
-      flex-direction: row;
-      padding: 10px;
-      background-color:  rgb(40, 125, 46);
+      padding: 5px;
+      background-color:  rgb(10, 185, 22);
       border-radius:5%;
       filter: drop-shadow(0 0 2px rgb(55, 139, 114));
     }

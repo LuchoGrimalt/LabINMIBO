@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----- Description y keywords para SEO -->
-    <meta name="Instituto de micología y botánica"
-        content="Web sobre descripcion, estudios, integrantes y más informacion sobre hongos y plantas">
+    <meta name="Instituto de micología y botánica - CONICET - ARGENTINA"
+        content="La misión del instituto es promover el conocimineto de la biología de los hongos y plantas en el campo científico y en el de aplicación, involucrados en el desarrollo de la agricultura, los recursos naturales, el control biológico y protección del ambiente tanto en procesos industriales, en el desarrollo social, servicios sociales, entre otras.">
     <!----- Fonts de google: Fira Sans, Hind y Kadwa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="index.html">
 </head>
 
+<!-- Barra superior-->
 <body>
     <header>
         <div class="barraSup">
@@ -44,13 +45,12 @@
         </div>
     </header>
 
-    <!-- Barra de navegacion bootstrap-->
+<!-- Barra de navegacion bootstrap-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <div class="container-fluid lead">
             <a class="navbar-brand" href="./index.html">
                 <img src="./media/logos/inmibo-transparente.png" width="50px" alt="barra de navegación">
             </a>
-            <h2 class="siglas text-white">INMIBO</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -72,20 +72,20 @@
                             <li class="rounded"><a class="dropdown-item text-white rounded"
                                     href="./pages/lineas/etnobiologia.html">Etnobiología</a></li>
                             <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./pages/lineas/agaricales.html">Hongos Agaricales</a>
+                                    href="./pages/lineas/hAgaricales.html">Hongos Agaricales</a>
                             </li>
                             <li class="rounded"><a class="dropdown-item text-white rounded"
                                     href="./pages/lineas/interacciones.html">Interacciones fúngicas de transmisión
                                     horizontal</a>
                             </li>
                             <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./pages/lineas/alimentos.html">Micología de alimentos</a>
+                                    href="./pages/lineas/micoAlimentos.html">Micología de alimentos</a>
                             </li>
                             <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./pages/lineas/experimental.html">Micología experimental</a>
+                                    href="./pages/lineas/micoExperimental.html">Micología experimental</a>
                             </li>
                             <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./pages/micoteca.html">Sistemática y biología reproductiva de plantas
+                                    href="./pages/lineas/sisVasculares.html">Sistemática y biología reproductiva de plantas
                                     vasculares</a>
                             </li>
                         </ul>
@@ -97,7 +97,7 @@
                         <a class="nav-link text-white" role="button" href="./pages/bibioteca.html">Biblioteca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="./pages/investigacion.html">Docencia</a>
+                        <a class="nav-link text-white" role="button" href="./pages/docencia.html">Docencia</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" role="button" href="./pages/integrantes.html">Integrantes</a>
@@ -106,20 +106,19 @@
                         <a class="nav-link text-white" role="button" href="./pages/galeria.html">Galería</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" role="button"
-                            href="./pages/investigacion.html">Intoxicaciones</a>
+                        <a class="nav-link text-white" role="button" href="./pages/intoxicaciones.html">Intoxicaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link  text-white" role="button" href="./#contacto">Contacto</a>
+                        <a class="nav-link  text-white" role="button" href="/#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
     </nav>
-
-    <main>
-        <video muted autoplay loop>
+    <video class="bgHeader" muted autoplay loop>
             <source src="./media/video/videongo.mp4" type="video/mp4">
-        </video>
+    </video>
+    
+    <main>
         <!-- Historia -->
         <section class="historia">
             <div class="intro">
@@ -318,9 +317,6 @@
                         <li>
                             <p>Int. Güiraldes 2620 - Ciudad Universitaria</p>
                         </li>
-                        <li>
-                            <p>Código Postal: C1428EHA</p>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -331,7 +327,7 @@
         <div class="footer_dire">
             <ul>
                 <li>
-                    <p>📞 Teléfono +5411 4787 2706</p>
+                    <p>📞 Teléfono (+5411) 4787 2706</p>
                 </li>
                 <li>
                     <p><a class="e-mail" href=mailto:secretaria.inmibo@gmail.com>📨 secretaria.inmibo@gmail.com</a></p>
@@ -377,7 +373,7 @@
 
     </footer>
     <div>
-        <h6>&copy by Domin & co</h6>
+        <h6>&copy 3 estrellas dev</h6>
     </div>
     <!-- Scripts de wow, popper y bootstrap -->
     <script src="js/wow.min.js"></script>

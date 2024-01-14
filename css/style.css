@@ -19,7 +19,7 @@
   margin: 10px;
 }
 .ubicacion .lugarContacto .contacto {
-  width: 500px;
+  width: 400px;
   height: auto;
   color: aliceblue;
   font-size: 1.2rem;
@@ -31,147 +31,6 @@
   width: 400px;
   height: 300px;
   margin: 10px;
-}
-
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  background: black;
-  align-items: center;
-  padding: 30px 5px;
-}
-footer .footer_dire {
-  width: 500px;
-  color: whitesmoke;
-}
-footer .footer_dire li p a {
-  text-decoration: none;
-}
-footer .footer_logo a img {
-  width: 500px;
-}
-footer .footer_redes {
-  display: inline-flex;
-  width: 500px;
-  justify-content: space-evenly;
-}
-footer .footer_redes img {
-  width: 64px;
-  flex-direction: row;
-  padding: 10px;
-  background-color: rgb(40, 125, 46);
-  border-radius: 5%;
-  filter: drop-shadow(0 0 2px rgb(55, 139, 114));
-}
-
-header {
-  position: relative;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  padding: auto;
-  background: rgba(17, 16, 16, 0.847);
-}
-header .barraSup {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  z-index: 1;
-}
-header .barraSup .marca {
-  justify-content: center;
-}
-header .barraSup .marca a {
-  display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-  text-decoration: none;
-  align-items: center;
-  padding: 5px;
-  justify-content: center;
-  margin: 0px 25px;
-}
-header .barraSup .marca a .logoHead {
-  width: 100px;
-}
-header .barraSup .marca a .description {
-  color: whitesmoke;
-  width: 150px;
-  font-family: "Hind", sans-serif;
-  font-size: 1.2rem;
-  margin: 0;
-}
-header .barraSup .siglas {
-  color: whitesmoke;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 5rem;
-  margin: 2px;
-  letter-spacing: 20px;
-}
-header .barraSup .logoConi {
-  width: 230px;
-  margin: 5px;
-  border-radius: 2%;
-}
-
-.equipo {
-  background: rgb(238, 236, 236);
-  padding: 60px 2px;
-}
-.equipo h4 {
-  color: grey;
-  padding-left: 30px;
-}
-.equipo h2 {
-  text-align: center;
-  color: black;
-  font-family: "Fira Sans", sans-serif;
-}
-.equipo .Integrantes {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.equipo .Integrantes .cardIndividual {
-  flex-direction: column;
-  width: 300px;
-  margin: 30px;
-  color: black;
-  font-family: "Fira Sans", sans-serif;
-  text-align: center;
-}
-.equipo .Integrantes .cardIndividual h5 {
-  margin: 10px 2px;
-  color: rgb(85, 81, 81);
-  font-family: "Fira Sans", sans-serif;
-}
-.equipo .Integrantes .cardIndividual p {
-  text-decoration: dotted;
-}
-.equipo .Integrantes .cardIndividual .fotoIntegrante {
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  border-radius: 50%;
-  border: solid rgb(215, 224, 228) 7px;
-  align-self: center;
-  margin: 20px 2px;
-  transition: 1.2s;
-}
-.equipo .Integrantes .cardIndividual .fotoIntegrante:hover {
-  transform: scale(1.1);
-}
-.equipo .Integrantes .cardIndividual .e-mail img {
-  width: 40px;
-  margin: 10px;
-}
-.equipo .grupo img {
-  width: 100%;
-  margin: 50px 2px;
 }
 
 .investigacion {
@@ -207,6 +66,37 @@ header .barraSup .logoConi {
   font-family: "Hind", sans-serif;
   font-size: 1.2rem;
   margin: 10px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background: black;
+  align-items: center;
+  padding: 30px 5px;
+}
+footer .footer_dire {
+  width: 500px;
+  color: whitesmoke;
+}
+footer .footer_dire li p a {
+  text-decoration: none;
+}
+footer .footer_logo a img {
+  width: 400px;
+}
+footer .footer_redes {
+  display: inline-flex;
+  width: 300px;
+  justify-content: space-evenly;
+}
+footer .footer_redes img {
+  width: 64px;
+  padding: 5px;
+  background-color: rgb(10, 185, 22);
+  border-radius: 5%;
+  filter: drop-shadow(0 0 2px rgb(55, 139, 114));
 }
 
 .portfolio {
@@ -266,17 +156,61 @@ header .barraSup .logoConi {
     opacity: 1;
   }
 }
-* {
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  padding: 2px;
+  background: rgba(17, 16, 16, 0.847);
+}
+
+.barraSup {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px;
+  z-index: 1;
+}
+.barraSup .marca {
+  justify-content: center;
+}
+.barraSup .marca a {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  text-decoration: none;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  margin: 0px 25px;
+}
+.barraSup .marca a .logoHead {
+  width: 100px;
+}
+.barraSup .marca a .description {
+  color: whitesmoke;
+  width: 150px;
+  font-family: "Hind", sans-serif;
+  font-size: 1.2rem;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+}
+.barraSup .siglas {
+  color: whitesmoke;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 4rem;
+  margin: 2px;
+  letter-spacing: 20px;
+}
+.barraSup .logoConi {
+  width: 230px;
+  margin: 5px;
+  border-radius: 2%;
 }
 
-body {
-  background-color: rgb(20, 18, 18);
-}
-
-video {
+.bgHeader {
   position: absolute;
   top: 0;
   left: 0;
@@ -288,7 +222,7 @@ video {
 
 .historia {
   width: auto;
-  margin: 140px;
+  margin: 80px;
 }
 .historia .intro {
   display: flex;
@@ -299,10 +233,11 @@ video {
 }
 .historia .intro h3 {
   color: rgb(41, 39, 39);
-  width: 80%;
+  width: 80% 2px 2px 2px;
   padding: 2px 50px;
   text-shadow: 2px;
   text-align: center;
+  font-family: "Hind", sans-serif;
 }
 .historia .intro .logoConiUba {
   width: 80%;
@@ -312,6 +247,93 @@ video {
   color: rgb(233, 228, 228);
   font-size: 4rem;
 }
+.historia p {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.822);
+}
+
+.equipo {
+  background: rgb(238, 236, 236);
+  padding: 60px 2px;
+}
+.equipo h4 {
+  color: grey;
+  padding-left: 30px;
+}
+.equipo h2 {
+  text-align: center;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+}
+.equipo .Integrantes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.equipo .Integrantes .cardIndividual {
+  flex-direction: column;
+  width: 300px;
+  margin: 30px;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+}
+.equipo .Integrantes .cardIndividual h5 {
+  margin: 10px 2px;
+  color: rgb(85, 81, 81);
+  font-family: "Fira Sans", sans-serif;
+}
+.equipo .Integrantes .cardIndividual p {
+  text-decoration: dotted;
+}
+.equipo .Integrantes .cardIndividual .fotoIntegrante {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  border-radius: 50%;
+  border: solid rgb(215, 224, 228) 7px;
+  align-self: center;
+  margin: 20px 2px;
+  transition: 1.2s;
+}
+.equipo .Integrantes .cardIndividual .fotoIntegrante:hover {
+  transform: scale(1.1);
+}
+.equipo .Integrantes .cardIndividual .e-mail img {
+  width: 40px;
+  margin: 10px;
+}
+.equipo .grupo img {
+  width: 100%;
+  margin: 50px 2px;
+}
+
+.zooInfinito {
+  width: 100svh;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: lime;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(20, 18, 18);
+}
 
 .navbar {
   background: rgba(17, 16, 16, 0.847);
@@ -319,7 +341,7 @@ video {
   position: sticky top;
 }
 .navbar .navbar-collapse {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 .navbar .navbar-collapse .nav-link {
   margin: 0px 15px;
@@ -329,7 +351,7 @@ video {
   transform: scale(1.1);
 }
 .navbar .navbar-collapse .nav-link:active {
-  color: orange;
+  color: rgb(43, 133, 15);
 }
 .navbar .navbar-collapse ul .dropdown-menu.show {
   background: none;
@@ -337,8 +359,8 @@ video {
 }
 .navbar .navbar-collapse ul .dropdown-menu.show li {
   margin: 3px;
-  background-color: rgb(26, 26, 26);
-  font-size: 1.2rem;
+  background-color: rgba(92, 90, 90, 0.973);
+  font-size: 1rem;
 }
 .navbar .navbar-collapse ul .dropdown-menu.show li a {
   padding: 10px;
