@@ -210,6 +210,16 @@ header {
   border-radius: 2%;
 }
 
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
 .bgHeader {
   position: absolute;
   top: 0;
@@ -260,52 +270,43 @@ header {
   color: grey;
   padding-left: 30px;
 }
-.equipo h2 {
-  text-align: center;
-  color: black;
-  font-family: "Fira Sans", sans-serif;
-}
-.equipo .Integrantes {
+.equipo .autoridades {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
-.equipo .Integrantes .cardIndividual {
+.equipo .autoridades .cardIndividual {
   flex-direction: column;
   width: 300px;
-  margin: 30px;
+  margin: 10px;
   color: black;
   font-family: "Fira Sans", sans-serif;
   text-align: center;
 }
-.equipo .Integrantes .cardIndividual h5 {
-  margin: 10px 2px;
+.equipo .autoridades .cardIndividual h5 {
+  margin: 5px;
   color: rgb(85, 81, 81);
   font-family: "Fira Sans", sans-serif;
 }
-.equipo .Integrantes .cardIndividual p {
+.equipo .autoridades .cardIndividual p {
   text-decoration: dotted;
+  margin: 2px;
 }
-.equipo .Integrantes .cardIndividual .fotoIntegrante {
+.equipo .autoridades .cardIndividual .fotoIntegrante {
   width: 200px;
   height: 200px;
   background-size: cover;
   border-radius: 50%;
   border: solid rgb(215, 224, 228) 7px;
   align-self: center;
-  margin: 20px 2px;
+  margin: 5px;
   transition: 1.2s;
 }
-.equipo .Integrantes .cardIndividual .fotoIntegrante:hover {
+.equipo .autoridades .cardIndividual .fotoIntegrante:hover {
   transform: scale(1.1);
 }
-.equipo .Integrantes .cardIndividual .e-mail img {
+.equipo .autoridades .cardIndividual .e-mail img {
   width: 40px;
-  margin: 10px;
-}
-.equipo .grupo img {
-  width: 100%;
-  margin: 50px 2px;
 }
 
 .zooInfinito {
@@ -341,10 +342,10 @@ body {
   position: sticky top;
 }
 .navbar .navbar-collapse {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .navbar .navbar-collapse .nav-link {
-  margin: 0px 15px;
+  margin: 0px 10px;
   transition: 1s;
 }
 .navbar .navbar-collapse .nav-link:hover {
@@ -375,7 +376,8 @@ body {
     flex-direction: column;
   }
   .siglas {
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
   }
   .lineasInv img {
     width: 80%;

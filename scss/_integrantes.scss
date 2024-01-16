@@ -5,30 +5,26 @@
     color: grey;
     padding-left: 30px;
   }
-  h2 {
-    text-align: center;
-    color: black;
-    font-family: "Fira Sans", sans-serif;
-  }
-  .Integrantes {
+
+  .autoridades {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     .cardIndividual {
       flex-direction: column;
       width: 300px;
-      margin: 30px;
+      margin: 10px;
       color: black;
       font-family: "Fira Sans", sans-serif;
       text-align: center;
-      h5{
-        margin: 10px 2px;
-        color: rgb(85, 81, 81) ;
+      h5 {
+        margin: 5px;
+        color: rgb(85, 81, 81);
         font-family: "Fira Sans", sans-serif;
-
       }
-      p{
+      p {
         text-decoration: dotted;
+        margin: 2px;
       }
       .fotoIntegrante {
         width: 200px;
@@ -37,21 +33,15 @@
         border-radius: 50%;
         border: solid rgb(215, 224, 228) 7px;
         align-self: center;
-        margin: 20px 2px;
+        margin: 5px;
         transition: 1.2s;
         &:hover {
           transform: scale(1.1);
         }
       }
-      .e-mail img{
+      .e-mail img {
         width: 40px;
-        margin: 10px;
       }
     }
-  }
-  .grupo img {
-    width: 100%;
-    margin: 50px 2px;
-
   }
 }

@@ -24,9 +24,9 @@ body{
   margin: 0;
   position: sticky top;
   .navbar-collapse {
-    font-size: 1.1rem;
+    font-size: 1rem;
     .nav-link {
-      margin: 0px 15px;
+      margin: 0px 10px;
       transition: 1s;
       &:hover {
         transform: scale(1.1);
@@ -59,7 +59,8 @@ body{
     flex-direction: column;
   }
   .siglas {
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
   }
   .lineasInv img {
     width: 80%;

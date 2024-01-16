@@ -28,6 +28,7 @@
 </head>
 
 <!-- Barra superior-->
+
 <body>
     <header>
         <div class="barraSup">
@@ -45,7 +46,7 @@
         </div>
     </header>
 
-<!-- Barra de navegacion bootstrap-->
+    <!-- Barra de navegacion bootstrap-->
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
         <div class="container-fluid lead">
             <a class="navbar-brand" href="./index.html">
@@ -54,7 +55,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">
             </button>
             <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
                 <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
@@ -85,7 +86,8 @@
                                     href="./pages/lineas/micoExperimental.html">Micología experimental</a>
                             </li>
                             <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./pages/lineas/sisVasculares.html">Sistemática y biología reproductiva de plantas
+                                    href="./pages/lineas/sisVasculares.html">Sistemática y biología reproductiva de
+                                    plantas
                                     vasculares</a>
                             </li>
                         </ul>
@@ -100,13 +102,14 @@
                         <a class="nav-link text-white" role="button" href="./pages/docencia.html">Docencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="./pages/integrantes.html">Integrantes</a>
+                        <a class="nav-link text-white" role="button" href="/#integrantes">Integrantes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" role="button" href="./pages/galeria.html">Galería</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="./pages/intoxicaciones.html">Intoxicaciones</a>
+                        <a class="nav-link text-white" role="button"
+                            href="./pages/intoxicaciones.html">Intoxicaciones</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  text-white" role="button" href="/#contacto">Contacto</a>
@@ -114,10 +117,10 @@
                 </ul>
             </div>
     </nav>
-    <video class="bgHeader" muted autoplay loop>
-            <source src="./media/video/videongo.mp4" type="video/mp4">
+    <video muted autoplay loop>
+        <source src="./media/video/videongo.mp4" type="video/mp4">
     </video>
-    
+
     <main>
         <!-- Historia -->
         <section class="historia">
@@ -215,10 +218,11 @@
         </section>
 
         <!-- Integrantes -->
-        <section class="equipo">
+        <section id="integrantes" class="equipo bg-light">
             <h4>Nuestro Equipo </h4>
-            <h2>Autoridades</h2>
-            <div class="Integrantes">
+            <h3 class="fs-5 text-success text-center py-3">Autoridades</h3>
+            <div class="autoridades">
+
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="./media/integrantes/lechner_autoridades.jpg" alt="Foto director">
                     </img>
@@ -231,9 +235,9 @@
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
                         target="_blank"><img src="./media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
-
                 </card>
-                <div class="cardIndividual">
+
+                <card class="cardIndividual">
                     <img class="fotoIntegrante" src="./media/integrantes/novas_autoridades.jpg" alt="Foto subdirectora">
                     </img>
                     <h5>Dra. María Victoria Novas</h5>
@@ -243,22 +247,265 @@
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=20741&keywords=Mar%C3%ADa%2BMaria%2BVictoria%2BNovas&datos_academicos=yes
                         target="_blank"><img src="./media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
-                </div>
-                <div class="cardIndividual">
-                    <img class="fotoIntegrante" src="./media/integrantes/novas_autoridades.jpg" alt="Foto subdirectora">
-                    </img>
-                    <h5>Silvia Inés Castellani</h5>
-                    <p>Secretaria (SINEP)</p>
-                    <p><img src="./media/redes/telefono5110022.svg" alt="icono telefono"> 4787-2706<a class="e-mail"
-                            href=mailto:secretaria.inmibo@gmail.com><img src="./media/redes/email.svg"
-                                alt="icono de e-mail"></a></p>
+                    </card>
+            </div>
 
+            <section class="h-50 bg-light align-items-center">
+                <div class="container-sm mx-auto">
+                    <h3 class="fs-5 text-success text-center py-3">Integrantes</h3>
+                    <div class="accordion accordion-flush" id="accordionIntegrantes">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Investigadores
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionIntegrantes">
+                                <div class="accordion-body">
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=21056&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>AMELA GARCIA</strong>
+                                        Maria Teresa</a> - Investigadora Adjunta CONICET<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=20851&amp;keywords=CARMAR%C3%81N%2BCARMARAN%2BCecilia%2BCristina&amp;datos_academicos=yes"
+                                        target="_blank"><strong>CARMARÁN</strong> Cecilia Cristina</a>
+                                    - Investigadora Independiente CONICET<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/" target="_blank">
+                                        <strong>CINTO</strong> Isabel Esther</a> - Investigadora Asistente<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/" target="_blank">
+                                        <strong>DELLA MONICA</strong> Ivana Florencia</a> - Investigadora
+                                    Asistente<br>
+
+                                    <strong>DIORIO </strong>Luis Alberto - Investigador UBA<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=27636&amp;keywords=dolinko%2Bandres&amp;datos_academicos=yes"
+                                        target="_blank">
+                                        <strong>DOLINKO </strong>Andrés Ezequiel</a> - Investigador Adjunto<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=51227&amp;keywords=fazio%2Balejandra&amp;datos_academicos=yes"
+                                        target="_blank"><strong>FAZIO</strong> Alejandra Teresa
+                                    </a> - Investigadora Adjunta<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=21721&amp;keywords=fracchia%2Bsebastian&amp;datos_academicos=yes"
+                                        target="_blank"><strong>FRACCHIA</strong> Sebastian</a> - Investigador
+                                    Independiente<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=21753&amp;keywords=galvagno%2Bmiguel&amp;datos_academicos=yes"
+                                        target="_blank">
+                                        <strong>GALVAGNO</strong> Miguel </a> - Investigador Independiente<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/">
+                                        <strong>IANNONE</strong> Leopoldo Javier</a> - Investigador Independiente
+                                    <br>
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"><strong>ITRIA</strong> Raúl
+                                        Fabio</a> - Investigador INTI
+                                    <br>
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"><strong>LECHNER
+                                        </strong>Bernardo Ernesto</a> - Investigador Independiente
+                                    <br>
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"><strong>LEVIN</strong>
+                                        Laura Noemi</a> - Investigadora Principal<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/" target="_blank"><strong>MC
+                                            CARGO</strong> Patricia Debora</a> - Investigadora
+                                    Asistente<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=29407&amp;keywords=martinez%2Btosar%2Bleandro&amp;datos_academicos=yes"
+                                        target="_blank"><strong>MARTINEZ TOSAR</strong> Leandro Julián</a> -
+                                    Investigador Asistente<br>
+
+                                    <strong>MARTINEZ</strong> Marisa Elisa - Investigador INTI<br>
+
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=37956&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>MENENDEZ</strong> Ana Bernardina</a> - Investigadora
+                                    Principal <br>
+
+                                    <strong>NAVARRO</strong> Liliana Evelin - Docente UBA<br>
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=20741&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>NOVAS</strong> María Victoria</a> - Investigadora
+                                    Independiente<br>
+                                    <strong>OJEDA</strong> Fabiana - Investigadora - UBA<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"
+                                        target="_blank"><strong>PATRIARCA</strong> Andrea Rosana</a> - Investigadora
+                                    Independiente <br>
+
+                                    <strong>PICCA</strong>Pablo Ignacio - Investigador - Docente UBA <br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=31374&amp;keywords=PITTA-ALVAREZ%2BSandra%2BIrene&amp;datos_academicos=yes"
+                                        target="_blank"><strong>PITTA-ALVAREZ</strong> Sandra Irene</a> -
+                                    Investigadora Independiente<br>
+                                    <a
+                                        href="http://www.conicet.gov.ar/new_scp/detalle.php?id=28597&amp;datos_academicos=yes&amp;keywords="><strong>ROBLES</strong>
+                                        Carolina
+                                        Analia</a>
+                                    - Investigadora Asistente<br>
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"
+                                        target="_blank"><strong>SUAREZ</strong> Maria Eugenia</a> -
+                                    Investigadora Adjunta<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=37137&amp;keywords=Tossi&amp;datos_academicos=yes"
+                                        target="_blank"><strong>TOSSI</strong> Vanesa Eleonora</a> -
+                                    Investigadora Asistentebr><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    Becarios
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionIntegrantes">
+                                <div class="accordion-body">
+
+                                    <strong>ALIAGA</strong> Joaquín- Becario UBA<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=62577&amp;keywords=AIMONE%2BDinorah&amp;datos_academicos=yes"
+                                        target="_blank"><strong>AIMONE</strong> Dinorah</a> - Becaria CONICET<br>
+
+                                    <strong>ATTONATY</strong> Gabriela Analía - Becaria Agencia<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=58532&amp;keywords=CASO%2BJosefina%2BMercedes&amp;datos_academicos=yes"
+                                        target="_blank"><strong>CASO</strong> Josefina Mercedes</a> - Becaria
+                                    CONICET<br>
+                                    <strong>CALLAO</strong> Sofía - Becaria UBA<br>
+
+                                    <strong>GAISER</strong> Rocío - Becaria UBA<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=48572&amp;keywords=herrera%2Bcano&amp;datos_academicos=yes"
+                                        target="_blank"><strong>HERRERA CANO</strong> Anahí Naymé</a> - Becaria
+                                    CONICET postdoc<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"><strong>KOBASHIGAWA</strong>
+                                        Jesica</a> - Becaria CONICET<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=58568&amp;keywords=laino%2Bleandro&amp;datos_academicos=yes"
+                                        target="_blank"><strong>LAINO</strong> Leandro Ezequiel </a> - Becario
+                                    CONICET<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=61932&amp;keywords=maldonado%2BHARo&amp;datos_academicos=yes"
+                                        target="_blank">
+                                        <strong>MALDONADO HARO</strong> Maria Luisa</a> - Becaria CONICET<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=64940&amp;keywords=martinez%2Bagustin%2Bpastor&amp;datos_academicos=yes"
+                                        target="_blank"> <strong>MARTINEZ</strong> Agustin Pastor</a> - Becario
+                                    CONICET<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=64940&amp;keywords=martinez%2Bagustin%2Bpastor&amp;datos_academicos=yes"
+                                        target="_blank">Agustín Pastor</a> -
+                                    Becario CONICET<br>
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=53751&amp;keywords=melgarejo%2Bestrada&amp;datos_academicos=yes"
+                                        target="_blank"><strong>MELGAREJO ESTRADA</strong> Elizabeth</a> - Becaria
+                                    CONICET<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=53669&amp;keywords=nu%C3%B1ez%2Bnunez%2Bmaria%2Bpilar&amp;datos_academicos=yes"
+                                        target="_blank"><strong>NUÑEZ</strong> María del
+                                        Pilar</a>- Becaria CONICET<br>
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=52132&amp;keywords=OTEGUI%2BFlorencia%2BSoledad&amp;datos_academicos=yes"
+                                        target="_blank"><strong>OTEGUI</strong> Florencia
+                                        Soledad</a> - Becaria CONICET<br>
+
+                                    <strong>PANDOLFELLI</strong> Lucas - Becario UBA estímulo<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=44919&amp;keywords=RAMIREZ%2BALBUQUERQUE&amp;datos_academicos=yes"
+                                        target="_blank">RAMIREZ ALBUQUERQUE</a> Lady Diana - Becaria CONICET
+                                    postdoc<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/" target="_blank">
+                                        <strong>RIOS</strong> Marcela Belén</a>
+                                    - Becaria CONICET<br>
+
+                                    <strong>RUIZ</strong> Daniel - Becario Agencia<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=58558&amp;keywords=SANCHEZ%2BBARBERENA%2BCarolina%2BJimena&amp;datos_academicos=yes"
+                                        target="_blank"><strong>SANCHEZ BARBERENA</strong> Carolina
+                                        Jimena</a> - Becaria doctoral CONICET<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/" target="_blank"><strong>STEFANONI
+                                            RUBIO</strong> Pablo </a> - Becario
+                                    CONICET (postdoc)<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"
+                                        target="_blank"><strong>TERLIZZI</strong>
+                                        Natalia</a> - Becaria UBA<br>
+
+                                    <strong>VOVCHUK</strong> Camila - Becaria UBA estímulo <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                    aria-controls="flush-collapseThree">
+                                    Administración (SINEP)
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionIntegrantes">
+                                <div class="accordion-body">
+                                    <strong>CASTELLANI</strong> Silvia Ines - Secretaria<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                    aria-controls="flush-collapseFour">
+                                    Personal de apoyo (CPA)
+                                </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionIntegrantes">
+                                <div class="accordion-body">
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=37517&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>BONADA</strong> Susana
+                                        Noemi</a> - Técnico Principal CONICET<br>
+
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=42662&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>CROCE</strong> Franco Luis</a> - Técnico Asociado
+                                    CONICET<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"
+                                        target="_blank"><strong>HIGER</strong> Diego Matias</a> - Técnico Prof.
+                                    Principal CONICET><br>
+
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=26883&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>LARUMBE</strong> Ada Gabriela</a> - Técnico Prof.
+                                    Principal CONICET<br>
+
+                                    <a href="https://www.conicet.gov.ar/new_scp/detalle.php?id=37552&amp;keywords=melignani%2Beliana&amp;datos_academicos=yes"
+                                        target="_blank"><strong>MELIGNANI</strong> Eliana</a> - Técnico Prof. Asistente
+                                    CONICET <br>
+
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=45024&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>MOM</strong> María Pía</a> - Técnico Prof. Principal
+                                    CONICET<br>
+
+                                    <a href="http://www.conicet.gov.ar/new_scp/detalle.php?id=29758&amp;datos_academicos=yes&amp;keywords="
+                                        target="_blank"><strong>PEREIRA</strong> Susana</a> - Técnico Prof. Principal
+                                    CONICET<br>
+
+                                    <a href="https://inmibo-uba-conicet.weebly.com/"
+                                        target="_blank"><strong>VALENTE</strong> Mariana Alda</a> - Técnico Prof.
+                                    Adjunto CONICET
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="grupo">
-                <img src="./media/integrantes/FOTO GRUPAL.jpg" alt="foto grupal">
-            </div>
+            </section>
         </section>
+
         <!-- Contacto -->
         <section id="contacto" class="ubicacion">
             <h2 class="subtitulo">Contacto</h2>
@@ -321,6 +568,10 @@
                 </div>
             </div>
         </section>
+
+        <div class="grupo bg-light row justify-content-center m-0 p-5">
+            <img src="./media/integrantes/FOTO GRUPAL.jpg" alt="foto grupal">
+        </div>
     </main>
 
     <footer class="container-fluid">
@@ -362,8 +613,8 @@
                         alt="facebook"></a>
             </div>
             <div>
-                <a href="https://twitter.com/hashtag/InMIBo?src=hashtag_click" target="_blank"><img src="./media/redes/twitter.png"
-                        alt="twitter"></a>
+                <a href="https://twitter.com/hashtag/InMIBo?src=hashtag_click" target="_blank"><img
+                        src="./media/redes/twitter.png" alt="twitter"></a>
             </div>
             <div>
                 <a href="https://www.whatsapp.com/" target="_blank"><img src="./media/redes/whatsapp.png"

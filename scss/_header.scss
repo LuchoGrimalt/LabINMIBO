@@ -50,6 +50,17 @@ header {
     border-radius: 2%;
   }
 }
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
 .bgHeader{
   position: absolute;
   top: 0;
