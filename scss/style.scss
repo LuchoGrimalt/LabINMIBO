@@ -7,6 +7,7 @@
 @import "header";
 @import "integrantes";
 @import "lineasInv";
+@import "estiloLineas";
 
 * {
   margin: 0;
@@ -14,17 +15,16 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: $bg_oscuro;
 }
-
 
 .navbar {
   background: $bg_transparente;
   margin: 0;
   position: sticky top;
   .navbar-collapse {
-    font-size: 1rem;
+    font-size: 1.2rem;
     .nav-link {
       margin: 0px 10px;
       transition: 1s;
@@ -55,15 +55,18 @@ body{
 }
 
 @media only screen and (max-width: 720px) {
-  header {
+  .barrasup {
     flex-direction: column;
   }
-  .siglas {
-    font-size: 1rem;
-    text-align: center;
+  .logoHead {
+    width: 50px;
   }
-  .lineasInv img {
-    width: 80%;
+  .description {
+    font-size: 1rem;
+  }
+  .siglas {
+    font-size: 0.7rem;
+    text-align: center;
   }
   .logoConi {
     display: none;
@@ -73,5 +76,9 @@ body{
   }
   video {
     width: 100%;
+  }
+  .fotos {
+    width: 300px;
+    text-align: center;
   }
 }

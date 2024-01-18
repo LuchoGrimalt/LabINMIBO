@@ -1,0 +1,56 @@
+
+.introLinea{
+    display: flex;
+    justify-content: center;
+    .nombreLinea{
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        img{
+            align-self: center;
+            width: 450px;
+            margin: 30px;
+        }
+        h2{
+            flex-flow: row wrap;
+            color: rgba(253, 244, 244, 0.966);
+            font-family: $Ft_titulo;
+            font-size: 3rem;
+            margin: 30px ;
+            background: rgba(0, 0, 0, 0.753);
+        }
+    }
+}
+
+.lineasDeTrabajo{
+    background: rgb(37, 33, 33);
+    padding: 20px;
+    color: whitesmoke;
+    h3{
+        padding: 40px;
+        font-weight: 100;
+        text-align: center;
+        color: rgb(207, 238, 207);
+    }
+    ul{
+        padding: 40px;
+     li{
+        padding: 5px 20px;
+        width: 90%;
+     }
+    }
+
+    .conclusiones{
+        padding: 60px;
+        background: url(../media/carrusel/recorte3.png);
+        background-size: cover;
+        .comentario{
+            font-family: $Ft_subtitulo;
+            color: rgb(227, 252, 10);
+            background: rgba(87, 85, 85, 0.589);
+            text-align: center;
+            padding: 30px;
+            font-weight: 300;
+        }
+    }
+}

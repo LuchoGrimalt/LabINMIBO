@@ -30,10 +30,8 @@
         animation-range: entry;
         transition: all 1.5s;
         &:hover {
-          transform: scale(1.5, 1.5);
+          transform: scale(1.2, 1.2);
           z-index: 2;
-          box-shadow: 2px 2px 5px #999;
-          -moz-box-shadow: 2px 2px 5px #999;
         }
     }
     }
