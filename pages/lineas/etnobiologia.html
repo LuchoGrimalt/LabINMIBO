@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----- Description y keywords para SEO -->
     <meta name="Instituto de micología y botánica - CONICET - ARGENTINA"
-    content="La misión del instituto es promover el conocimineto de la biología de los hongos y plantas en el campo científico y en el de aplicación, involucrados en el desarrollo de la agricultura, los recursos naturales, el control biológico y protección del ambiente tanto en procesos industriales, en el desarrollo social, servicios sociales, entre otras.">
+        content="Llevamos a cabo líneas de investigación enmarcadas en la etnobiología. Estudiamos, por ende, las
+        relaciones entre distintos grupos humanos de Argentina y su entorno natural en sentido
+        amplio.">
     <!----- Fonts de google: Fira Sans, Hind y Kadwa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +30,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="headerLineas">
         <div class="barraSup">
             <div class="marca">
                 <a href="../../index.html">
@@ -42,211 +44,229 @@
                 <img class="logoConi" src="../../media/logos/inmibo-uba-conicet-fondo-blanco.jpg" alt="logo CONICET">
             </div>
         </div>
-    </header>
 
-    <!-- Barra de navegacion bootstrap-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid lead">
-            <a class="navbar-brand" href="../../index.html">
-                <img src="../../media/logos/inmibo-transparente.png" width="50px" alt="barra de navegación">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
-                <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Lineas de Investigación</a>
-                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./bioinoculantes.html">Bioinoculantes</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./cultivo.html">Cultivo de plantas y microalgas </a></li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./endofitos.html">Endofitos Fúngicos</a></li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./etnobiologia.html">Etnobiología</a></li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./hAgaricales.html">Hongos Agaricales</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./interacciones.html">Interacciones fúngicas de transmisión
-                                    horizontal</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./micoAlimentos.html">Micología de alimentos</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./micoExperimental.html">Micología experimental</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./sisVasculares.html">Sistemática y biología reproductiva de plantas
-                                    vasculares</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../micoteca.html">Micoteca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../bibioteca.html">Biblioteca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../docencia.html">Docencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="/#integrantes">Integrantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../intoxicaciones.html">Intoxicaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" role="button" href="/#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
-    <div>
-        <img class="bgHeader" src="../../media/galeria/DSC_6786.jpg" alt="hongo">
-    </div>
-    <main>
-        
-        <!-- Historia -->
-        <section class="historia">
-            <div class="intro">
-                <h4 class="fraseIntro wow animate__animated animate__fadeIn">Con una trayectoria de casi 30 años, el
-                    InMiBo es una unidad ejecutora del CONICET de doble
-                    pertenencia</h4>
+
+        <!-- Barra de navegacion bootstrap-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid lead">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../media/logos/inmibo-transparente.png" width="50px" alt="barra de navegación">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Lineas de Investigación</a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./bioinoculantes.html">Bioinoculantes</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./cultivo.html">Cultivo de plantas y microalgas </a></li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./endofitos.html">Endofitos Fúngicos</a></li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./etnobiologia.html">Etnobiología</a></li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./hAgaricales.html">Hongos Agaricales</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./interacciones.html">Interacciones fúngicas de transmisión
+                                        horizontal</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./micoAlimentos.html">Micología de alimentos</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./micoExperimental.html">Micología experimental</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./sisVasculares.html">Sistemática y biología reproductiva de plantas
+                                        vasculares</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../micoteca.html">Micoteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../bibioteca.html">Biblioteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../docencia.html">Docencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="/#integrantes">Integrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button"
+                                href="../intoxicaciones.html">Intoxicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" role="button" href="/#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+
+        <!-- Intro -->
+        <section class="introLinea">
+            <div class="nombreLinea">
                 <img class="logoConiUba wow animate__animated animate__zoomIn"
                     src="../../media/logos/UBA-conicet-fondo TRANSPARENTE.png" alt="logo uba conicet">
-                <hr>
-                <h1>InMiBo</h1>
+                <h3 class="fraseIntro rounded wow animate__animated animate__fadeIn">ETNOBIOLOGÍA</h3>
             </div>
         </section>
-        <!-- Galeria -->
+    </header>
+    <main>
+        <!-- Lineas de trabajo -->
+        <section class="lineasDeTrabajo">
+            <div class="resenia">
+                <h4>Llevamos a cabo líneas de investigación enmarcadas en la etnobiología. Estudiamos, por ende, las
+                    relaciones entre distintos grupos humanos de Argentina y su entorno natural en sentido
+                    amplio.<br>​En otras palabras, estudiamos - desde la perspectiva de la ciencia académica occidental
+                    - sus conocimientos, concepciones, percepciones, prácticas y usos acerca de los seres vivos y del
+                    hábitat en su conjunto, atendiendo a la perspectiva vernácula, la ciencia vernácula, y funcionando
+                    como interlocutores entre ambas ciencias.</h4>
+            </div>
+            <h3>Lineas de trabajo</h3><br>
+            <hr>
 
-        <section class="portfolio">
-            <h2>Galería</h2>
-            <div class="Galeria">
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6686.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6700.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6711.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6721.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6728.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6749_2.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6753.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6786.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6807.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6840.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6856.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6869.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6884.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6888.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6933.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/DSC_6953.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
+            <!-- Detalle de Lineas de trabajo -->
+            <div class="areaLineas">
+                <div class="detalleslinea">
+                    <h5 class="fs-5 text-success py-3">
+                        <li><u>Etnobiología wichí en el gran chaco</u>
+                        </li>
+                    </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptates odio quae possimus
+                        dolore quos sequi facilis fuga voluptatibus iusto nesciunt dicta, a aliquam cupiditate impedit
+                        deserunt non dolorem vero.</p>
+                    <strong>Directora: </strong> <br>
+                    - María Eugenia Suarez <br>
+                    <strong>Integrantes:</strong><br>
+                    - Florencia Otegui<br>
+                    - Anahí herrera Cano<br>
                 </div>
 
-                <div class="fotos">
-                    <img src="../../media/galeria/ETNOBOTANICA_Recolección de muestras botánicas_foto Pablo Fernández Elisegui.jpg"
-                        alt="ETNOBOTANICA: Recolección de muestras botánicas_foto Pablo Fernández Elisegui.jpg"><br>
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">ETNOBOTANICA</h4>
-                    <h6>Recolección de muestras botánicas_foto Pablo Fernández Elisegui</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/ETNOBOTANICA_Salida de recolección grupal.JPG" alt="DSC_6686.jpg"><br>
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">ETNOBOTANICA </h4>
-                    <h6>Salida de recolección grupal</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/Fruto de Trichocereus pasacana, para comer.JPG" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Fruto de Trichocereus pasacana, para
-                        comer</h4>
-                    <h6>Autor: Juan Perez</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/MICOLOGIA EXPERIMENTAL LEVIN VER_HYBfinal.jpg" alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">MICOLOGIA EXPERIMENTAL </h4>
-                    <h6>LEVIN VER_HYBfinal</h6>
-                </div>
-                <div class="fotos">
-                    <img src="../../media/galeria/ETNOBOTANICA_Octaviano estaqueando cuero de isok'i, Boa constrictor occidentalis.JPG"
-                        alt="DSC_6686.jpg">
-                    <h4 class="fraseIntro wow animate__animated animate__fadeIn">Titulo</h4>
-                    <h6>Autor: Juan Perez</h6>
+                <!-- carrusel linea-->
+                <div id="carouselLineas" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselLineas" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselLineas" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselLineas" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../../media/galeria/ETNOBOTANICA_Octaviano estaqueando cuero de isok'i, Boa constrictor occidentalis.JPG" class="d-block w-100" alt="Gamers">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../media/galeria/ETNOBOTANICA_Recolección de muestras botánicas_foto Pablo Fernández Elisegui.jpg" class="d-block w-100" alt="Desarrollador">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../../media/galeria/ETNOBOTANICA_Salida de recolección grupal.JPG" class="d-block w-100" alt="Edicion de sonido">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLineas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLineas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
-    </main>
 
+            <!-- Acordeon linea-->
+            <section class="acordeonLinea">
+                <section class="rounded w-75 bg-light
+                 align-items-center">
+                    <div class="container-sm mx-auto">
+                        <div class="accordion accordion-flush" id="accordionIntegrantes">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fs-5 text-success" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        Principales papers y/o contribuciones (últimos 5 años)
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionIntegrantes">
+                                    <div class="accordion-body">
+                                        <a
+                                            href="http://www.conicet.gov.ar/new_scp/detalle.php?id=21056&amp;datos_academicos=yes&amp;keywords=">
+                                        </a>
+    
+                                        <ul>
+                                            <li>Identificación de interacciones de valor agronómico en <em>Brassica
+                                                    napus</em>.</li>
+                                            <li>Uso de endofitos con potencial biotecnológico para cultivos de interés bajo
+                                                condiciones de
+                                                estrés.
+                                            </li>
+                                            <li>Efecto de la interacción <em>Bromus auleticus - Epichloe</em> sp. en la
+                                                tolerancia a UV-B,
+                                                sequía y
+                                                salinidad.</li>
+                                            <li>Análisis de mecanismos de promoción de simbiosis micorrícica mediada por
+                                                endofitos en
+                                                <em>Bromus
+                                                    auleticus</em>, gramínea de interés agropecuario.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <hr>    
+        <!-- Integrantes -->
+        <section id="integrantes" class="equipo bg-light">
+            <h4>Integrantes</h4>
+            <div class="autoridades">
+                <card class="cardIndividual">
+                    <h3 class="fs-5 text-primary text-center py-3">Investigador responsable</h3>
+                    <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
+                    </img>
+                    <h5>María Eugenia Suárez</h5>
+                    <p>Investigador Independiente CONICET</p>
+                    <a class="e-mail" href=mailto:eugesuarez78@gmail.com><img src="../../media/redes/email.svg"
+                            alt="icono de e-mail"></a>
+                    <a class="e-mail"
+                        href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
+                </card>
+                <card class="cardIndividual">
+                    <h3 class="fs-5 text-primary text-center py-3">Grupo</h3>
+                    <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
+                    </img>
+                    <h5>GRUPO</h5>
+                    <p>Laboratorios 8 y 9</p>
+                    <a class="e-mail" href=mailto:etnobiologia.fceyn.uba@gmail.com><img
+                            src="../../media/redes/email.svg" alt="icono de e-mail"></a>
+                    <a class="e-mail" href=@etnobiologiafceynuba target="_blank"><img
+                            src="../../media/redes/facebook.png" alt="icono de CONICET"></a><br>
+                    <a href="https://dbbe.fcen.uba.ar/investigacion/grupos-de-investigacion/grupo-de-etnobiologia/">Web
+                        del grupo en DBBE</a>
+                </card>
+    </main>
     <footer class="container-fluid">
         <div class="footer_dire">
             <ul>

@@ -1,56 +1,89 @@
-
-.introLinea{
+.headerLineas {
+  background: url(../media/carrusel/recorte2.png);
+  width: 100%;
+  background-size: cover;
+  padding: 0px;
+  .introLinea {
     display: flex;
     justify-content: center;
-    .nombreLinea{
-        flex-direction: column;
-        text-align: center;
-        margin: auto;
-        img{
-            align-self: center;
-            width: 450px;
-            margin: 30px;
-        }
-        h2{
-            flex-flow: row wrap;
-            color: rgba(253, 244, 244, 0.966);
-            font-family: $Ft_titulo;
-            font-size: 3rem;
-            margin: 30px ;
-            background: rgba(0, 0, 0, 0.753);
-        }
+    .nombreLinea {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      img {
+        width: 50%;
+      }
+      h3 {
+        font-family: $Ft_titulo;
+        color: whitesmoke;
+        padding: 20px;
+        letter-spacing: 4px;
+        background: $bg_transparente;
+      }
     }
+  }
+}
+.lineasDeTrabajo {
+  background: $bg_oscuro;
+  padding: 30px 10px;
+  color: whitesmoke;
+  .resenia {
+    display: flex;
+    justify-self: center;
+    color: greenyellow;
+    h4 {
+      text-align: center;
+      font-weight: 100;
+      margin: 40px 20px;
+    }
+  }
+  ul {
+    margin: 10px;
+    padding: 10px;
+    li {
+      padding: 5px 10px;
+      width: 90%;
+    }
+  }
 }
 
-.lineasDeTrabajo{
-    background: rgb(37, 33, 33);
-    padding: 20px;
-    color: whitesmoke;
-    h3{
-        padding: 40px;
-        font-weight: 100;
-        text-align: center;
-        color: rgb(207, 238, 207);
-    }
-    ul{
-        padding: 40px;
-     li{
-        padding: 5px 20px;
-        width: 90%;
-     }
-    }
+.conclusiones {
+  padding: 30px 10px;
+  background: url(../media/carrusel/recorte5.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .comentario {
+    font-family: $Ft_subtitulo;
+    color: rgb(227, 252, 10);
+    background: rgba(87, 85, 85, 0.589);
+    text-align: center;
+    width: 100%;
+    font-weight: 300;
+  }
+}
 
-    .conclusiones{
-        padding: 60px;
-        background: url(../media/carrusel/recorte3.png);
-        background-size: cover;
-        .comentario{
-            font-family: $Ft_subtitulo;
-            color: rgb(227, 252, 10);
-            background: rgba(87, 85, 85, 0.589);
-            text-align: center;
-            padding: 30px;
-            font-weight: 300;
-        }
-    }
+.acordeonLinea{
+    display: flex;
+    justify-content: center;
+    background: rgb(109, 189, 107);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.areaLineas{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 5px;
+  .detallesLinea{
+    width: 450px;
+    flex-direction: column;
+  }
+  #carouselLineas{
+    width: 500px;
+    height: auto;
+    background-size: cover;
+  }
+
 }

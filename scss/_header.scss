@@ -9,6 +9,7 @@ header {
 .barraSup {
   display: flex;
   flex-flow: row wrap;
+  background: $bg_transparente;
   width: 100%;
   justify-content: space-around;
   align-items: center;

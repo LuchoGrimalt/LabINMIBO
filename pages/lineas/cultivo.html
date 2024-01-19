@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----- Description y keywords para SEO -->
     <meta name="Instituto de micología y botánica - CONICET - ARGENTINA"
-    content="La misión del instituto es promover el conocimineto de la biología de los hongos y plantas en el campo científico y en el de aplicación, involucrados en el desarrollo de la agricultura, los recursos naturales, el control biológico y protección del ambiente tanto en procesos industriales, en el desarrollo social, servicios sociales, entre otras.">
+        content="La misión del instituto es promover el conocimineto de la biología de los hongos y plantas en el campo científico y en el de aplicación, involucrados en el desarrollo de la agricultura, los recursos naturales, el control biológico y protección del ambiente tanto en procesos industriales, en el desarrollo social, servicios sociales, entre otras.">
     <!----- Fonts de google: Fira Sans, Hind y Kadwa -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="headerLineas">
         <div class="barraSup">
             <div class="marca">
                 <a href="../../index.html">
@@ -42,118 +42,137 @@
                 <img class="logoConi" src="../../media/logos/inmibo-uba-conicet-fondo-blanco.jpg" alt="logo CONICET">
             </div>
         </div>
-    </header>
 
-    <!-- Barra de navegacion bootstrap-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid lead">
-            <a class="navbar-brand" href="../../index.html">
-                <img src="../../media/logos/inmibo-transparente.png" width="50px" alt="barra de navegación">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
-                <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Lineas de Investigación</a>
-                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./bioinoculantes.html">Bioinoculantes</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./cultivo.html">Cultivo de plantas y microalgas </a></li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./endofitos.html">Endofitos Fúngicos</a></li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./etnobiologia.html">Etnobiología</a></li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./hAgaricales.html">Hongos Agaricales</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./interacciones.html">Interacciones fúngicas de transmisión
-                                    horizontal</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./micoAlimentos.html">Micología de alimentos</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./micoExperimental.html">Micología experimental</a>
-                            </li>
-                            <li class="rounded"><a class="dropdown-item text-white rounded"
-                                    href="./sisVasculares.html">Sistemática y biología reproductiva de plantas
-                                    vasculares</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../micoteca.html">Micoteca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../bibioteca.html">Biblioteca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../docencia.html">Docencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="/#integrantes">Integrantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" role="button" href="../intoxicaciones.html">Intoxicaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-white" role="button" href="/#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-    </nav>
-    <img class="bgHeader" src="../../media/carrusel/recorte1.png" alt="hongo">
-    <main>
-        
+
+        <!-- Barra de navegacion bootstrap-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid lead">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../media/logos/inmibo-transparente.png" width="50px" alt="barra de navegación">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Lineas de Investigación</a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./bioinoculantes.html">Bioinoculantes</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./cultivo.html">Cultivo de plantas y microalgas </a></li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./endofitos.html">Endofitos Fúngicos</a></li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./etnobiologia.html">Etnobiología</a></li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./hAgaricales.html">Hongos Agaricales</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./interacciones.html">Interacciones fúngicas de transmisión
+                                        horizontal</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./micoAlimentos.html">Micología de alimentos</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./micoExperimental.html">Micología experimental</a>
+                                </li>
+                                <li class="rounded"><a class="dropdown-item text-white rounded"
+                                        href="./sisVasculares.html">Sistemática y biología reproductiva de plantas
+                                        vasculares</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../micoteca.html">Micoteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../bibioteca.html">Biblioteca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../docencia.html">Docencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="/#integrantes">Integrantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button" href="../galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" role="button"
+                                href="../intoxicaciones.html">Intoxicaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-white" role="button" href="/#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
         <!-- Intro -->
         <section class="introLinea">
             <div class="nombreLinea">
                 <img class="logoConiUba wow animate__animated animate__zoomIn"
                     src="../../media/logos/UBA-conicet-fondo TRANSPARENTE.png" alt="logo uba conicet">
-                <h2 class="fraseIntro rounded wow animate__animated animate__fadeIn">Laboratorio de Cultivo de Plantas y Microalgas</h2>
-
+                <h3 class="fraseIntro rounded wow animate__animated animate__fadeIn">Laboratorio de Cultivo de
+                    Plantas y
+                    Microalgas</h3>
             </div>
         </section>
-
+    </header>
+    <main>
         <!-- Lineas de trabajo -->
         <section class="lineasDeTrabajo">
-            <h2>Lineas de trabajo</h2>
+            <h4>Lineas de trabajo</h4>
             <ul>
                 <li>Estrés en plantas</li>
-                <li>Caracterización funcional del primer receptor UVR8 descripto en gimnospermas (<em>Taxus baccata</em>) en estudios de complementación en <em>Arabidopsis thaliana</em>.</li>
+                <li>Caracterización funcional del primer receptor UVR8 descripto en gimnospermas (<em>Taxus
+                        baccata</em>) en estudios de complementación en <em>Arabidopsis thaliana</em>.</li>
                 <li>Análisis integral de la respuesta al uv-b en plántulas de <em>Chenopodium quinoa</em>.</li>
-                <li>Estudiar el efecto de diferentes dosis de UV-B en el crecimiento de plántulas y la producción de pigmentos, en genotipos de quinoa con diferente grado de tolerancia al estrés.</li>
-                <li>Caracterizar los cambios en el perfil de expresión de genes ortólogos del receptor UVR8 y de DODA (4,5-DOPA extradiol-dioxygenase) frente a diferentes dosis de UV-B.</li>
-                <li>Analizar comparativamente las variaciones en los niveles de betalaínas, flavonoides y la actividad de enzimas antioxidantes en los diferentes genotipos</li>
-                <li>Rol de la poliploidización sobre la tolerancia al estrés por radiación UV-B en <em>Arabidopsis thaliana</em>.</li>
-                <li>Determinar la tolerancia de plántulas tetraploides naturales y sintéticas frente a dosis crecientes de UV-B.</li>
-                <li>Analizar la actividad de las enzimas antioxidantes catalasa (CAT), superóxido dismutasa (SOD) y ascorbato peroxidasa (APX).</li>
-                <li>Medición de la expresión de genes implicados en la vía de señalización de la luz UV-B y producción de antocianinas y flavonoides.</li>
+                <li>Estudiar el efecto de diferentes dosis de UV-B en el crecimiento de plántulas y la producción de
+                    pigmentos, en genotipos de quinoa con diferente grado de tolerancia al estrés.</li>
+                <li>Caracterizar los cambios en el perfil de expresión de genes ortólogos del receptor UVR8 y de DODA
+                    (4,5-DOPA extradiol-dioxygenase) frente a diferentes dosis de UV-B.</li>
+                <li>Analizar comparativamente las variaciones en los niveles de betalaínas, flavonoides y la actividad
+                    de enzimas antioxidantes en los diferentes genotipos</li>
+                <li>Rol de la poliploidización sobre la tolerancia al estrés por radiación UV-B en <em>Arabidopsis
+                        thaliana</em>.</li>
+                <li>Determinar la tolerancia de plántulas tetraploides naturales y sintéticas frente a dosis crecientes
+                    de UV-B.</li>
+                <li>Analizar la actividad de las enzimas antioxidantes catalasa (CAT), superóxido dismutasa (SOD) y
+                    ascorbato peroxidasa (APX).</li>
+                <li>Medición de la expresión de genes implicados en la vía de señalización de la luz UV-B y producción
+                    de antocianinas y flavonoides.</li>
                 <li>Rol de la poliploidización sobre la tolerancia al estrés hídrico en <em>Petunia axillaris</em>.</li>
-                <li>Efecto de la radiación UV-B sobre la tolerancia a bajas temperaturas de almacenamiento en <em>Cucurbita pepo.</em></li>
-                <li>Se han aplicado en distintas especies radiación UV (UVC y UVB) con el objetivo de generar un priming que permita generar una mayor resistencia a patógenos u otros tipos de estrés.</li>
-                <li>Desarrollo de un programa de mejora genética participativa de variedades autóctonas de zapallo (<em>Cucurbita maxima</em>) adaptadas a la agricultura de subsistencia del noroeste argentino (NOA).</li>
-                <li>Efecto de la interacción <em>Bromus auleticus - Epichloe </em>sp. en la tolerancia a UV-B, sequía y salinidad.</li>
+                <li>Efecto de la radiación UV-B sobre la tolerancia a bajas temperaturas de almacenamiento en
+                    <em>Cucurbita pepo.</em>
+                </li>
+                <li>Se han aplicado en distintas especies radiación UV (UVC y UVB) con el objetivo de generar un priming
+                    que permita generar una mayor resistencia a patógenos u otros tipos de estrés.</li>
+                <li>Desarrollo de un programa de mejora genética participativa de variedades autóctonas de zapallo
+                    (<em>Cucurbita maxima</em>) adaptadas a la agricultura de subsistencia del noroeste argentino (NOA).
+                </li>
+                <li>Efecto de la interacción <em>Bromus auleticus - Epichloe </em>sp. en la tolerancia a UV-B, sequía y
+                    salinidad.</li>
                 <li>Identificación de interacciones de valor agronómico en<em>Brassica napus</em>.</li>
-                <li>Identificación de microorganismos endofíticos de <em>Chenopodium quinoa</em> nativos de Argentina, y su rol en el desarrollo de tolerancia al estrés por radiación UV-B.</li>
-                <li>Participación de las estrigolactonas en la respuesta a la radiación UV-B y en la regulación del cierre estomático en <em>Arabidopsis thaliana</em>.</li>
+                <li>Identificación de microorganismos endofíticos de <em>Chenopodium quinoa</em> nativos de Argentina, y
+                    su rol en el desarrollo de tolerancia al estrés por radiación UV-B.</li>
+                <li>Participación de las estrigolactonas en la respuesta a la radiación UV-B y en la regulación del
+                    cierre estomático en <em>Arabidopsis thaliana</em>.</li>
                 <li>Estudio de la relación genotipo/quimiotipo en cepas de <em>Fusarium graminearum.</em></li>
-                <li>Producción de astaxanthina en co-cultivos fúngico/algales para la formulación de balanceados para la industria ictícola.</li>
+                <li>Producción de astaxanthina en co-cultivos fúngico/algales para la formulación de balanceados para la
+                    industria ictícola.</li>
                 <li>Actividad antioxidante, anti-inflamatoria, anti-tumoral, neuroprotectiva e immunoestimulante.</li>
             </ul>
             <div class="conclusiones">
-                <h3 class="comentario rounded">Se espera que el mercado internacional alcance USD 3.5 mil millones anuales para 2026 (actual USD 1.37) El uso de AX en la formulación de alimentos para producción animal alcanzó el 65.5% del mercado en 2020, con China dominando el 40 % del mercado mundial.</h3>
+                <h3 class="comentario rounded">Se espera que el mercado internacional alcance USD 3.5 mil millones
+                    anuales para 2026 (actual USD 1.37) El uso de AX en la formulación de alimentos para producción
+                    animal alcanzó el 65.5% del mercado en 2020, con China dominando el 40 % del mercado mundial.</h3>
             </div>
         </section>
 
@@ -171,8 +190,7 @@
                             alt="icono de e-mail"></a>
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
-                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png"
-                            alt="icono de CONICET"></a>
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
                 </card>
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
@@ -183,8 +201,7 @@
                             alt="icono de e-mail"></a>
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
-                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png"
-                            alt="icono de CONICET"></a>
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
                 </card>
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
@@ -195,11 +212,10 @@
                             alt="icono de e-mail"></a>
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
-                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png"
-                            alt="icono de CONICET"></a>
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
                 </card>
             </div><br><br>
-                <h3 class="fs-5 text-success text-center py-3">Integrantes</h3>
+            <h3 class="fs-5 text-success text-center py-3">Integrantes</h3>
             <div class="autoridades">
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
@@ -210,8 +226,7 @@
                             alt="icono de e-mail"></a>
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
-                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png"
-                            alt="icono de CONICET"></a>
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
                 </card>
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
@@ -222,8 +237,7 @@
                             alt="icono de e-mail"></a>
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
-                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png"
-                            alt="icono de CONICET"></a>
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
                 </card>
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
@@ -234,8 +248,7 @@
                             alt="icono de e-mail"></a>
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
-                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png"
-                            alt="icono de CONICET"></a>
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
                 </card>
                 <card class="cardIndividual">
                     <img class="fotoIntegrante" src="../../media/galeria/DSC_6711.jpg" alt="Foto director">
@@ -246,8 +259,7 @@
                             alt="icono de e-mail"></a>
                     <a class="e-mail"
                         href=https://www.conicet.gov.ar/new_scp/detalle.php?id=24450&keywords=BERNARDO%2BLECHNER&datos_academicos=yes
-                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png"
-                            alt="icono de CONICET"></a>
+                        target="_blank"><img src="../../media/redes/logo-CONICET_opt.png" alt="icono de CONICET"></a>
                 </card>
             </div>
     </main>

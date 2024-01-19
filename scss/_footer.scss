@@ -8,22 +8,26 @@ footer {
   .footer_dire {
     width: 500px;
     color: whitesmoke;
-    li p a {
-      text-decoration: none;
+    padding-left: 10px;
+    li{
+      padding: 0;
     }
   }
-  .footer_logo a img {
+  .footer_logo {
     width: 400px;
+    a img {
+      width: 100%;
+    }
   }
   .footer_redes {
     display: inline-flex;
     width: 300px;
     justify-content: space-evenly;
     img {
-      width: 64px;
+      width: 60px;
       padding: 5px;
-      background-color:  rgb(10, 185, 22);
-      border-radius:5%;
+      background-color: rgb(10, 185, 22);
+      border-radius: 5%;
       filter: drop-shadow(0 0 2px rgb(55, 139, 114));
     }
   }
