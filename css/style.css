@@ -24,39 +24,13 @@
   height: auto;
   color: aliceblue;
   font-size: 1.2rem;
-  background: rgba(17, 16, 16, 0.847);
+  background: rgba(0, 0, 0, 0.219);
   border-radius: 3%;
   margin: 10px;
 }
 .ubicacion .lugarContacto .mapa iframe {
   width: 100%;
   height: 300px;
-}
-
-.headerLineas {
-  background: url(../media/carrusel/recorte2.png);
-  width: 100%;
-  background-size: cover;
-  padding: 0px;
-}
-.headerLineas .introLinea {
-  display: flex;
-  justify-content: center;
-}
-.headerLineas .introLinea .nombreLinea {
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-}
-.headerLineas .introLinea .nombreLinea img {
-  width: 50%;
-}
-.headerLineas .introLinea .nombreLinea h3 {
-  font-family: "Fira Sans", Times, serif;
-  color: whitesmoke;
-  padding: 20px;
-  letter-spacing: 4px;
-  background: rgba(17, 16, 16, 0.847);
 }
 
 .lineasDeTrabajo {
@@ -67,7 +41,7 @@
 .lineasDeTrabajo .resenia {
   display: flex;
   justify-self: center;
-  color: greenyellow;
+  color: rgb(180, 235, 99);
 }
 .lineasDeTrabajo .resenia h4 {
   text-align: center;
@@ -100,11 +74,10 @@
 }
 
 .acordeonLinea {
-  display: flex;
-  justify-content: center;
   background: rgb(109, 189, 107);
   padding: 10px;
   margin-bottom: 20px;
+  color: rgb(22, 21, 21);
 }
 
 .areaLineas {
@@ -215,27 +188,23 @@ footer .footer_redes img {
 }
 header {
   position: relative;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  padding: 2px;
-  background: rgba(17, 16, 16, 0.847);
+  width: 100% vh;
+  height: 100%;
 }
-
-.barraSup {
+header .barraSup {
   display: flex;
   flex-flow: row wrap;
-  background: rgba(17, 16, 16, 0.847);
   width: 100%;
   justify-content: space-around;
   align-items: center;
   padding: 2px;
   z-index: 1;
+  background: rgba(0, 0, 0, 0.219);
 }
-.barraSup .marca {
+header .barraSup .marca {
   justify-content: center;
 }
-.barraSup .marca a {
+header .barraSup .marca a {
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -245,30 +214,29 @@ header {
   justify-content: center;
   margin: 0px 25px;
 }
-.barraSup .marca a .logoHead {
-  width: 100px;
+header .barraSup .marca a .logoHead {
+  width: 70px;
 }
-.barraSup .marca a .description {
+header .barraSup .marca a .description {
   color: whitesmoke;
   width: 150px;
   font-family: "Hind", sans-serif;
   font-size: 1.2rem;
   margin: 0;
 }
-.barraSup .siglas {
+header .barraSup .siglas {
   color: whitesmoke;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 4rem;
+  font-family: "Fira Sans", Times, serif;
+  font-size: 2.5rem;
   margin: 2px;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
 }
-.barraSup .logoConi {
+header .barraSup .logoConi {
   width: 230px;
   margin: 5px;
   border-radius: 2%;
 }
-
-video {
+header .videoP {
   position: absolute;
   top: 0;
   left: 0;
@@ -276,6 +244,38 @@ video {
   min-height: 100%;
   object-fit: cover;
   z-index: -2;
+  opacity: 75%;
+  filter: saturate(1.2);
+}
+header .historia {
+  width: auto;
+  margin-top: 10%;
+}
+header .historia .intro {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+}
+header .historia .intro .fraseintro {
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Hind", sans-serif;
+  font-weight: 100;
+}
+header .historia .intro .logoConiUba {
+  width: 60%;
+  background-color: rgba(255, 248, 248, 0.068);
+}
+header .historia .intro h2 {
+  font-family: "Fira Sans", sans-serif;
+  color: rgba(252, 244, 244, 0.582);
+  font-size: 2.5rem;
+}
+header .historia .logoExactas {
+  width: 15%;
+  margin: 20px;
 }
 
 .bgHeader {
@@ -286,38 +286,6 @@ video {
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.historia {
-  width: auto;
-  margin: 80px;
-}
-.historia .intro {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin: auto;
-  align-items: center;
-}
-.historia .intro h3 {
-  color: rgb(41, 39, 39);
-  width: 80% 2px 2px 2px;
-  padding: 2px 50px;
-  text-shadow: 2px;
-  text-align: center;
-  font-family: "Hind", sans-serif;
-}
-.historia .intro .logoConiUba {
-  width: 80%;
-}
-.historia .intro h2 {
-  font-family: "Fira Sans", sans-serif;
-  color: rgb(233, 228, 228);
-  font-size: 4rem;
-}
-.historia p {
-  color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.822);
 }
 
 .equipo {
@@ -413,19 +381,18 @@ body {
 }
 
 .navbar {
-  background: rgba(17, 16, 16, 0.847);
   margin: 0;
   position: sticky top;
 }
 .navbar .navbar-collapse {
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .navbar .navbar-collapse .nav-link {
   margin: 0px 10px;
-  transition: 1s;
+  transition: 500ms;
 }
 .navbar .navbar-collapse .nav-link:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .navbar .navbar-collapse .nav-link:active {
   color: rgb(43, 133, 15);
@@ -448,25 +415,19 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  .barrasup .marca a .logoHead {
+  img .sup {
     width: 50px;
   }
-  .barrasup #top.description {
+  #top.description {
     width: 150px;
     font-size: 0.8rem;
   }
-  .barrasup .siglas {
+  .siglas {
     font-size: 2rem;
     text-align: center;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
   }
-  .barrasup .logoConi {
-    display: none;
-  }
-  .historia {
-    display: none;
-  }
-  video {
+  .logoConi {
     display: none;
   }
   div.fotos {

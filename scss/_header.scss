@@ -1,68 +1,98 @@
 header {
   position: relative;
-  width: 100%;
-  height: auto;
-  background-size: cover;
-  padding: 2px;
-  background: $bg_transparente;
-}
-.barraSup {
-  display: flex;
-  flex-flow: row wrap;
-  background: $bg_transparente;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2px;
-  z-index: 1;
-  .marca {
-    justify-content: center;
-    a {
-      display: flex;
-      flex-direction: row;
-      align-content: flex-start;
-      text-decoration: none;
-      align-items: center;
-      padding: 5px;
+  width: 100%vh;
+  height: 100%;
+
+  .barraSup {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    z-index: 1;
+    background: $bg_transparente;
+
+    .marca {
       justify-content: center;
-      margin: 0px 25px;
-      .logoHead {
-        width: 100px;
-      }
-      .description {
-        color: whitesmoke;
-        width: 150px;
-        font-family: "Hind", sans-serif;
-        font-size: 1.2rem;
-        margin: 0;
+      a {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-start;
+        text-decoration: none;
+        align-items: center;
+        padding: 5px;
+        justify-content: center;
+        margin: 0px 25px;
+        .logoHead {
+          width: 70px;
+        }
+        .description {
+          color: whitesmoke;
+          width: 150px;
+          font-family: "Hind", sans-serif;
+          font-size: 1.2rem;
+          margin: 0;
+        }
       }
     }
+    .siglas {
+      color: whitesmoke;
+      font-family: $Ft_titulo;
+      font-size: 2.5rem;  
+      margin: 2px;
+      letter-spacing: 10px;
+    }
+    .logoConi {
+      width: 230px;
+      margin: 5px;
+      border-radius: 2%;
+    }
   }
-  .siglas {
-    color: whitesmoke;
-    font-family: "Fira Sans", sans-serif;
-    font-size: 4rem;
-    margin: 2px;
-    letter-spacing: 20px;
+  .videoP {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 75%;
+    filter: saturate(1.2);
   }
-  .logoConi {
-    width: 230px;
-    margin: 5px;
-    border-radius: 2%;
+  .historia {
+    width: auto;
+    margin-top: 10%;
+    .intro {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      margin: auto;
+      align-items: center;
+      .fraseintro {
+        color: whitesmoke;
+        text-align: center;
+        font-family: "Hind", sans-serif;
+        font-weight: 100;
+      }
+      .logoConiUba {
+        width: 60%;
+        background-color: rgba(255, 248, 248, 0.068);
+      }
+      h2 {
+        font-family: "Fira Sans", sans-serif;
+        color: rgba(252, 244, 244, 0.582);
+        font-size: 2.5rem;
+      }
+    }
+    .logoExactas{
+     width: 15%;
+     margin: 20px;
+    }
   }
 }
 
-video{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  z-index: -2;
-}
-
-.bgHeader{
+.bgHeader {
   position: absolute;
   top: 0;
   left: 0;
@@ -70,36 +100,4 @@ video{
   min-height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.historia {
-  width: auto;
-  margin: 80px;
-  .intro {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    margin: auto;
-    align-items: center;
-    h3 {
-      color: rgb(41, 39, 39);
-      width: 80% 2px 2px 2px;
-      padding: 2px 50px;
-      text-shadow: 2px;
-      text-align: center;
-      font-family: "Hind", sans-serif;
-    }
-    .logoConiUba {
-      width: 80%;
-    }
-    h2 {
-      font-family: "Fira Sans", sans-serif;
-      color: rgb(233, 228, 228);
-      font-size: 4rem;
-    }
-  }
-  p{
-    color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.822);
-  }
 }
