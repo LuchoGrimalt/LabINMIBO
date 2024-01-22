@@ -23,7 +23,7 @@ body {
   margin: 0;
   position: sticky top;
   .navbar-collapse {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     .nav-link {
       margin: 0px 10px;
       transition: 500ms;
@@ -61,8 +61,8 @@ body {
     width: 150px;
     font-size: 0.8rem;
   }
-  .siglas {
-    font-size: 2rem;
+  h1 .siglas {
+    font-size: 1.4rem;
     text-align: center;
     letter-spacing: 4px;
   }

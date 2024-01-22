@@ -74,8 +74,6 @@
 }
 
 .acordeonLinea {
-  background: rgb(109, 189, 107);
-  padding: 10px;
   margin-bottom: 20px;
   color: rgb(22, 21, 21);
 }
@@ -227,7 +225,7 @@ header .barraSup .marca a .description {
 header .barraSup .siglas {
   color: whitesmoke;
   font-family: "Fira Sans", Times, serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin: 2px;
   letter-spacing: 10px;
 }
@@ -385,7 +383,7 @@ body {
   position: sticky top;
 }
 .navbar .navbar-collapse {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 .navbar .navbar-collapse .nav-link {
   margin: 0px 10px;
@@ -422,8 +420,8 @@ body {
     width: 150px;
     font-size: 0.8rem;
   }
-  .siglas {
-    font-size: 2rem;
+  h1 .siglas {
+    font-size: 1.4rem;
     text-align: center;
     letter-spacing: 4px;
   }
