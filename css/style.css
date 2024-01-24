@@ -74,23 +74,29 @@
 }
 
 .acordeonLinea {
-  margin-bottom: 20px;
+  margin: 20px 10px;
   color: rgb(22, 21, 21);
+}
+.acordeonLinea .accordion-item {
+  border-radius: 2rem;
 }
 
 .areaLineas {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  padding: 5px;
 }
 .areaLineas .detallesLinea {
-  width: 450px;
+  width: 500px;
   flex-direction: column;
 }
 .areaLineas #carouselLineas {
   width: 500px;
   height: auto;
+  background-size: cover;
+}
+.areaLineas #carouselLineas .slide img {
+  height: 500px;
   background-size: cover;
 }
 
@@ -261,10 +267,12 @@ header .historia .intro .fraseintro {
   text-align: center;
   font-family: "Hind", sans-serif;
   font-weight: 100;
+  margin-top: 30px;
 }
 header .historia .intro .logoConiUba {
   width: 60%;
   background-color: rgba(255, 248, 248, 0.068);
+  border-radius: 1rem;
 }
 header .historia .intro h2 {
   font-family: "Fira Sans", sans-serif;
