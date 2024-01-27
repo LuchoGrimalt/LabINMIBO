@@ -35,13 +35,14 @@
 
 .lineasDeTrabajo {
   background: rgb(20, 18, 18);
-  padding: 30px 10px;
+  padding: 3%;
   color: whitesmoke;
 }
 .lineasDeTrabajo .resenia {
   display: flex;
   justify-self: center;
   color: rgb(180, 235, 99);
+  padding: 3%;
 }
 .lineasDeTrabajo .resenia h4 {
   text-align: center;
@@ -55,6 +56,32 @@
 .lineasDeTrabajo ul li {
   padding: 5px 10px;
   width: 90%;
+}
+.lineasDeTrabajo .areaLineas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.lineasDeTrabajo .areaLineas .detallesLinea {
+  width: 500px;
+  flex-direction: column;
+}
+.lineasDeTrabajo .areaLineas #carouselLineas {
+  width: 500px;
+  height: auto;
+  background-size: cover;
+}
+.lineasDeTrabajo .areaLineas #carouselLineas .carrousel-item img {
+  height: 500px;
+  max-height: 600px;
+  background-size: cover;
+}
+.lineasDeTrabajo .acordeonLinea {
+  margin: 20px 10px;
+  color: rgb(22, 21, 21);
+}
+.lineasDeTrabajo .acordeonLinea .accordion-item {
+  border-radius: 2rem;
 }
 
 .conclusiones {
@@ -73,31 +100,10 @@
   font-weight: 300;
 }
 
-.acordeonLinea {
-  margin: 20px 10px;
-  color: rgb(22, 21, 21);
-}
-.acordeonLinea .accordion-item {
-  border-radius: 2rem;
-}
-
-.areaLineas {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-.areaLineas .detallesLinea {
-  width: 500px;
-  flex-direction: column;
-}
-.areaLineas #carouselLineas {
-  width: 500px;
-  height: auto;
-  background-size: cover;
-}
-.areaLineas #carouselLineas .slide img {
-  height: 500px;
-  background-size: cover;
+.cursosMaterias {
+  padding: 5%;
+  background: whitesmoke;
+  color: rgb(70, 67, 67);
 }
 
 footer {
@@ -211,19 +217,16 @@ header .barraSup .marca {
 header .barraSup .marca a {
   display: flex;
   flex-direction: row;
-  align-content: flex-start;
   text-decoration: none;
   align-items: center;
-  padding: 5px;
   justify-content: center;
-  margin: 0px 25px;
 }
 header .barraSup .marca a .logoHead {
-  width: 70px;
+  width: 75px;
 }
 header .barraSup .marca a .description {
   color: whitesmoke;
-  width: 150px;
+  width: 120px;
   font-family: "Hind", sans-serif;
   font-size: 1.2rem;
   margin: 0;
@@ -421,17 +424,9 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  img .sup {
-    width: 50px;
-  }
-  #top.description {
-    width: 150px;
+  #top {
     font-size: 0.8rem;
-  }
-  h1 .siglas {
-    font-size: 1.4rem;
-    text-align: center;
-    letter-spacing: 4px;
+    width: 80px;
   }
   .logoConi {
     display: none;

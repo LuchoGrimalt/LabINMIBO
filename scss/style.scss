@@ -54,18 +54,11 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-  img .sup {
-    width: 50px;
-  }
-  #top.description {
-    width: 150px;
+  #top {
     font-size: 0.8rem;
+    width: 80px;
   }
-  h1 .siglas {
-    font-size: 1.4rem;
-    text-align: center;
-    letter-spacing: 4px;
-  }
+
   .logoConi {
     display: none;
   }

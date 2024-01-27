@@ -18,18 +18,15 @@ header {
       a {
         display: flex;
         flex-direction: row;
-        align-content: flex-start;
         text-decoration: none;
         align-items: center;
-        padding: 5px;
         justify-content: center;
-        margin: 0px 25px;
-        .logoHead {
-          width: 70px;
+        .logoHead{
+          width: 75px;
         }
         .description {
           color: whitesmoke;
-          width: 150px;
+          width: 120px;
           font-family: "Hind", sans-serif;
           font-size: 1.2rem;
           margin: 0;
