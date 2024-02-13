@@ -53,6 +53,20 @@ body {
   }
 }
 
+.feedFace {
+  background: url(../media/carrusel/recorte5.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+iframe {
+  margin: 1rem;
+  border-radius: 2%;
+}
+
 @media only screen and (max-width: 800px) {
   #top {
     font-size: 0.8rem;

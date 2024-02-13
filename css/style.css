@@ -13,6 +13,7 @@
   color: whitesmoke;
 }
 .ubicacion .lugarContacto {
+  font-family: "Hind", sans-serif;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -65,16 +66,18 @@
 .lineasDeTrabajo .areaLineas .detallesLinea {
   width: 500px;
   flex-direction: column;
+  border: solid grey 2px;
+  border-radius: 1rem;
+  padding: 1rem;
 }
 .lineasDeTrabajo .areaLineas #carouselLineas {
   width: 500px;
-  height: auto;
-  background-size: cover;
-}
-.lineasDeTrabajo .areaLineas #carouselLineas .carrousel-item img {
   height: 500px;
-  max-height: 600px;
-  background-size: cover;
+}
+.lineasDeTrabajo .areaLineas #carouselLineas .carousel-item img {
+  height: 490px;
+  object-fit: contain;
+  object-position: center;
 }
 .lineasDeTrabajo .acordeonLinea {
   margin: 20px 10px;
@@ -233,7 +236,7 @@ header .barraSup .marca a .description {
 }
 header .barraSup .siglas {
   color: whitesmoke;
-  font-family: "Fira Sans", Times, serif;
+  font-family: "Alegreya Sans SC";
   font-size: 2.2rem;
   margin: 2px;
   letter-spacing: 10px;
@@ -256,7 +259,7 @@ header .videoP {
 }
 header .historia {
   width: auto;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 header .historia .intro {
   display: flex;
@@ -268,9 +271,9 @@ header .historia .intro {
 header .historia .intro .fraseintro {
   color: whitesmoke;
   text-align: center;
-  font-family: "Hind", sans-serif;
-  font-weight: 100;
-  margin-top: 30px;
+  font-family: "Alegreya Sans SC";
+  font-size: 2rem;
+  font-weight: 300;
 }
 header .historia .intro .logoConiUba {
   width: 60%;
@@ -285,6 +288,7 @@ header .historia .intro h2 {
 header .historia .logoExactas {
   width: 15%;
   margin: 20px;
+  padding: 1rem;
 }
 
 .bgHeader {
@@ -321,7 +325,7 @@ header .historia .logoExactas {
 .equipo .autoridades .cardIndividual h5 {
   margin: 5px;
   color: rgb(85, 81, 81);
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Alegreya Sans SC";
 }
 .equipo .autoridades .cardIndividual p {
   text-decoration: dotted;
@@ -374,7 +378,7 @@ header .historia .logoExactas {
 .investigacion .lineasInv a .description {
   color: whitesmoke;
   width: 230px;
-  font-family: "Hind", sans-serif;
+  font-family: "Alegreya Sans SC";
   font-size: 0, 6rem;
   margin: 4px;
 }
@@ -421,6 +425,21 @@ body {
 .navbar .navbar-collapse ul .dropdown-menu.show li a:hover {
   background-color: rgb(40, 125, 46);
   color: whitesmoke;
+}
+
+.feedFace {
+  background: url(../media/carrusel/recorte5.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+}
+
+iframe {
+  margin: 1rem;
+  border-radius: 2%;
 }
 
 @media only screen and (max-width: 800px) {

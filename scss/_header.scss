@@ -59,7 +59,7 @@ header {
   }
   .historia {
     width: auto;
-    margin-top: 10%;
+    margin-top: 7%;
     .intro {
       display: flex;
       flex-direction: column;
@@ -69,9 +69,9 @@ header {
       .fraseintro {
         color: whitesmoke;
         text-align: center;
-        font-family: "Hind", sans-serif;
-        font-weight: 100;
-        margin-top: 30px;
+        font-family: $Ft_titulo;
+        font-size: 2rem;
+        font-weight: 300;
       }
       .logoConiUba {
         width: 60%;
@@ -87,6 +87,7 @@ header {
     .logoExactas{
      width: 15%;
      margin: 20px;
+     padding: 1rem;
     }
   }
 }

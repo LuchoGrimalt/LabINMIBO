@@ -28,15 +28,17 @@
     .detallesLinea {
       width: 500px;
       flex-direction: column;
+      border: solid grey 2px ;
+      border-radius: 1rem;
+      padding: 1rem;
     }
     #carouselLineas {
       width: 500px;
-      height: auto;
-      background-size: cover;
-      .carrousel-item img {
-        height: 500px;
-        max-height: 600px;
-        background-size: cover;
+      height: 500px;
+      .carousel-item img {
+        height: 490px;
+        object-fit: contain;
+        object-position: center;
       }
     }
   }
@@ -65,7 +67,7 @@
   }
 }
 
-.cursosMaterias{
+.cursosMaterias {
   padding: 5%;
   background: whitesmoke;
   color: rgb(70, 67, 67);
