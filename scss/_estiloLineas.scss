@@ -21,6 +21,15 @@
       width: 90%;
     }
   }
+  .imgLineas{
+    color: #5e5e5e;
+    background: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
   .areaLineas {
     display: flex;
     flex-flow: row wrap;

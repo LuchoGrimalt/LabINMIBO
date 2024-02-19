@@ -58,6 +58,15 @@
   padding: 5px 10px;
   width: 90%;
 }
+.lineasDeTrabajo .imgLineas {
+  color: #5e5e5e;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
 .lineasDeTrabajo .areaLineas {
   display: flex;
   flex-flow: row wrap;
@@ -254,16 +263,15 @@ header .videoP {
   width: 100%;
   min-height: 100%;
   object-fit: cover;
+  object-position: center;
   z-index: -2;
   opacity: 75%;
   filter: saturate(1.2);
 }
 header .historia {
   width: 100%;
-  height: 80%;
   display: flex;
-  align-items: center;
-  justify-items: auto;
+  margin-top: 8%;
 }
 header .historia .intro {
   display: flex;
@@ -275,8 +283,8 @@ header .historia .intro {
 header .historia .intro .fraseintro {
   color: white;
   text-align: center;
+  padding: 2rem;
   font-family: "Alegreya Sans SC";
-  font-size: 2.5rem;
   font-weight: 300;
 }
 header .historia .intro .logoConiUba {
@@ -285,7 +293,7 @@ header .historia .intro .logoConiUba {
   border-radius: 1rem;
 }
 header .historia .intro .logoExactas {
-  margin-top: 20%;
+  margin-top: 25px;
   align-self: flex-end;
   width: 15%;
 }
@@ -373,9 +381,8 @@ header .historia .intro .logoExactas {
   transition: 1s;
 }
 .investigacion .lineasInv a:hover {
-  border-radius: 1rem;
-  border: solid 2px rgb(31, 163, 31);
-  box-shadow: 0 0 20px #4f9;
+  text-shadow: 0 0 20px rgb(186, 255, 217);
+  transition: 0.5s;
 }
 .investigacion .lineasInv a .logoHead {
   width: 60px;
