@@ -1,35 +1,41 @@
-
 .investigacion {
-    background-color: $bg_oscuro;
-    padding: 40px 2px;
-    h2 {
-      color: whitesmoke;
-      padding-left: 30px;
-    }
-    .lineasInv {
+  background-color: $bg_oscuro;
+  padding: 40px 2px;
+  h2 {
+    color: whitesmoke;
+    padding-left: 30px;
+  }
+  .lineasInv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2px;
+    a {
       display: flex;
-      flex-flow: row wrap;
+      flex-direction: row;
+      align-content: flex-start;
+      text-decoration: none;
+      align-items: center;
+      padding: 5px;
       justify-content: center;
-      padding: 2px;
-      a {
-        display: flex;
-        flex-direction: row;
-        align-content: flex-start;
-        text-decoration: none;
-        align-items: center;
-        padding: 5px;
-        justify-content: center;
-        margin: 10px;
-        .logoHead {
-          width: 60px;
-        }
-        .description {
-          color: whitesmoke;
-          width: 230px;
-          font-family: $Ft_titulo;
-          font-size: 0,6rem;
-          margin: 4px;
-        }
+      margin: 10px;
+      transition: 1s;
+      &:hover {
+        // border: 3px solid rgb(106, 184, 145);
+        border-radius: 1rem;
+        border: solid 2px rgb(31, 163, 31);
+        box-shadow: 0 0 20px #4f9;
+      }
+      .logoHead {
+        width: 60px;
+      }
+      .description {
+        color: whitesmoke;
+        width: 300px;
+        font-family: $Ft_subtitulo;
+        font-size: 1.4rem;
+        margin: 4px;
       }
     }
   }
+}

@@ -70,21 +70,22 @@
   border-radius: 1rem;
   padding: 1rem;
 }
-.lineasDeTrabajo .areaLineas #carouselLineas {
-  width: 500px;
-  height: 500px;
-}
-.lineasDeTrabajo .areaLineas #carouselLineas .carousel-item img {
-  height: 490px;
-  object-fit: contain;
-  object-position: center;
-}
 .lineasDeTrabajo .acordeonLinea {
   margin: 20px 10px;
   color: rgb(22, 21, 21);
 }
 .lineasDeTrabajo .acordeonLinea .accordion-item {
   border-radius: 2rem;
+}
+
+#carouselLineas {
+  width: 480px;
+  height: 500px;
+}
+#carouselLineas .carousel-item img {
+  height: 490px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .conclusiones {
@@ -258,8 +259,11 @@ header .videoP {
   filter: saturate(1.2);
 }
 header .historia {
-  width: auto;
-  margin-top: 7%;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-items: auto;
 }
 header .historia .intro {
   display: flex;
@@ -269,26 +273,21 @@ header .historia .intro {
   align-items: center;
 }
 header .historia .intro .fraseintro {
-  color: whitesmoke;
+  color: white;
   text-align: center;
   font-family: "Alegreya Sans SC";
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 header .historia .intro .logoConiUba {
-  width: 60%;
+  width: 70%;
   background-color: rgba(255, 248, 248, 0.068);
   border-radius: 1rem;
 }
-header .historia .intro h2 {
-  font-family: "Fira Sans", sans-serif;
-  color: rgba(252, 244, 244, 0.582);
-  font-size: 2.5rem;
-}
-header .historia .logoExactas {
+header .historia .intro .logoExactas {
+  margin-top: 20%;
+  align-self: flex-end;
   width: 15%;
-  margin: 20px;
-  padding: 1rem;
 }
 
 .bgHeader {
@@ -371,15 +370,21 @@ header .historia .logoExactas {
   padding: 5px;
   justify-content: center;
   margin: 10px;
+  transition: 1s;
+}
+.investigacion .lineasInv a:hover {
+  border-radius: 1rem;
+  border: solid 2px rgb(31, 163, 31);
+  box-shadow: 0 0 20px #4f9;
 }
 .investigacion .lineasInv a .logoHead {
   width: 60px;
 }
 .investigacion .lineasInv a .description {
   color: whitesmoke;
-  width: 230px;
-  font-family: "Alegreya Sans SC";
-  font-size: 0, 6rem;
+  width: 300px;
+  font-family: "Hind", sans-serif;
+  font-size: 1.4rem;
   margin: 4px;
 }
 
@@ -402,13 +407,27 @@ body {
 }
 .navbar .navbar-collapse .nav-link {
   margin: 0px 10px;
-  transition: 500ms;
+  position: relative;
 }
-.navbar .navbar-collapse .nav-link:hover {
-  transform: scale(1.05);
+.navbar .navbar-collapse .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 95%;
+  background-color: white;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+.navbar .navbar-collapse .nav-link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 .navbar .navbar-collapse .nav-link:active {
-  color: rgb(43, 133, 15);
+  color: rgb(80, 194, 46);
 }
 .navbar .navbar-collapse ul .dropdown-menu.show {
   background: none;
@@ -416,36 +435,36 @@ body {
 }
 .navbar .navbar-collapse ul .dropdown-menu.show li {
   margin: 3px;
-  background-color: rgba(68, 66, 66, 0.973);
+  background-color: rgb(131, 124, 124);
   font-size: 1rem;
 }
 .navbar .navbar-collapse ul .dropdown-menu.show li a {
   padding: 10px;
 }
 .navbar .navbar-collapse ul .dropdown-menu.show li a:hover {
-  background-color: rgb(40, 125, 46);
+  background-color: rgba(40, 125, 46, 0.719);
   color: whitesmoke;
 }
 
 .feedFace {
-  background: url(../media/carrusel/recorte5.png);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
+  background: rgb(20, 18, 18);
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 iframe {
-  margin: 1rem;
-  border-radius: 2%;
+  border-radius: 1rem;
 }
 
 @media only screen and (max-width: 800px) {
   #top {
     font-size: 0.8rem;
     width: 80px;
+  }
+  .historia .fraseintro {
+    font-size: 1.5rem;
   }
   .logoConi {
     display: none;

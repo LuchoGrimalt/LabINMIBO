@@ -57,7 +57,7 @@
                 <div class="collapse navbar-collapse text-white " id="navbarSupportedContent">
                     <ul class="navbar-nav me-1 ms-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link active dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Lineas de Investigación</a>
                             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                                 <li class="rounded"><a class="dropdown-item text-white rounded"
@@ -124,8 +124,8 @@
                 </h4>
                 <img class="logoConiUba wow animate__animated animate__zoomIn"
                     src="./media/logos/UBA-conicet-fondo TRANSPARENTE.png" alt="logo uba conicet">
+                <img class="logoExactas" src="media/logos/exactasUBA.png" alt="logo exactas-UBA">
             </div>
-            <img class="logoExactas" src="media/logos/exactasUBA.png" alt="logo exactas-UBA">
         </section>
         <video class="videoP imagenP" muted autoplay loop>
             <source src="./media/video/videongo.mp4" type="video/mp4">
@@ -205,19 +205,70 @@
         </section>
 
         <!-- Novedaes -->
-        <div class="feedFace justify-content-center">
-            <h3 class="text-white p-3">Novedades</h3>
-            <iframe
+        <div class="feedFace p-5 ">
+            <div id="carouselLineas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselLineas" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselLineas" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselLineas" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselLineas" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./media/galeria/semanabiologia01.jpg" class="d-block w-100"
+                            alt="Semana de la biología">
+                        <div class="carousel-caption">
+                            <p>Semana de la Biología 2023</p>
+                        </div>>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/galeria/semanabiologia02.jpg" class="d-block w-100"
+                            alt="Semana de la biología">
+                        <div class="carousel-caption">
+                            <p>Semana de la Biología 2023</p>
+                        </div>>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./media/galeria/semanabiologia03.jpg" class="d-block w-100"
+                        alt="Semana de la biología">
+                        <div class="carousel-caption">
+                            <p>Semana de la Biología 2023</p>
+                        </div>>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../media/galeria/semanabiologia04.jpg" class="d-block w-100"
+                            alt="Semana de la biología">
+                        <div class="carousel-caption">
+                            <p>Semana de la Biología 2023</p>
+                        </div>>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselLineas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselLineas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <h2 class="text-white m-4">Novedades</h2>
+            <div>
+                <iframe
                 src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FInmibo%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId"
                 width="500px" height="500px" scrolling="no" frameborder="0" allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+            </div>
+            <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+                <div class="elfsight-app-7fcb130c-3af9-436d-ac1c-e64abcd53bb9" data-elfsight-app-lazy></div> -->
         </div>
-
-        <!-- <div class="feedInsta">
-            <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-            <div class="elfsight-app-7fcb130c-3af9-436d-ac1c-e64abcd53bb9" data-elfsight-app-lazy></div>
-        </div>
-        <br> -->
 
         <!-- Integrantes -->
         <section id="integrantes" class="equipo bg-light">
@@ -542,7 +593,7 @@
                 <div class="mapa">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2323.871189641139!2d-58.442391918193955!3d-34.54215617279756!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43866c5180b%3A0xa704b3258b20ce37!2sFacultad%20de%20Ciencias%20Exactas%20y%20Naturales%2C%20UBA!5e0!3m2!1ses!2sus!4v1702257547068!5m2!1ses!2sus"
-                        style="border:0;" allowfullscreen="" loading="lazy">
+                        loading="lazy">
                     </iframe>
                 </div>
                 <div class="contacto intoxicaciones">

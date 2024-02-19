@@ -28,18 +28,9 @@
     .detallesLinea {
       width: 500px;
       flex-direction: column;
-      border: solid grey 2px ;
+      border: solid grey 2px;
       border-radius: 1rem;
       padding: 1rem;
-    }
-    #carouselLineas {
-      width: 500px;
-      height: 500px;
-      .carousel-item img {
-        height: 490px;
-        object-fit: contain;
-        object-position: center;
-      }
     }
   }
   .acordeonLinea {
@@ -48,6 +39,16 @@
     .accordion-item {
       border-radius: 2rem;
     }
+  }
+}
+
+#carouselLineas {
+  width: 480px;
+  height: 500px;
+  .carousel-item img {
+    height: 490px;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
